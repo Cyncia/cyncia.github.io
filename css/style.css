@@ -98,6 +98,7 @@ a .active {
   margin-top: var(--space-lg);
   font-size: var(--text-md);
   font-family: var(--font-secondary);
+  background-color: pink;
 }
 
 .header {
