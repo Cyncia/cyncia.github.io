@@ -1,0 +1,152 @@
+/* https://medium.com/codyhouse/create-your-design-system-part-4-spacing-895c9213e2b9 */
+
+
+/******** FOR Typography ********/
+/* text size */
+.text--xxxl {
+    font-size: var(--text-xxxl);
+}
+
+h1, .text--xxl {
+    font-size: var(--text-xxl);
+}
+
+h2, .text--xl {
+    font-size: var(--text-xl);
+}
+
+h3, .text--lg {
+    font-size: var(--text-lg);
+}
+
+h4, .text--md {
+    font-size: var(--text-md);
+}
+
+.text--sm, small {
+    font-size: var(--text-sm);
+}
+
+.text--xs {
+    font-size: var(--text-xs);
+}
+
+.text-container {
+    h2, h3, h4 {
+        margin-top: var(--space-sm);
+    }
+    
+    ul, ol, p {
+        margin-bottom: var(--space-md);
+    }
+
+    ul, ol {
+		list-style-position: outside;
+        padding-left: 24px;
+	}
+
+	ul {
+		list-style-type: disc;
+	}
+
+	ol {
+		list-style-type: decimal;
+    }
+
+    ul li, ol li {
+        line-height: var(--body-line-height);
+    }
+    
+    em {
+        font-style: italic;
+    }
+
+    u {
+        text-decoration: underline;
+    }
+}
+
+/******** FOR SPACING ********/
+
+/* vertical margins */
+.margin-top, .margin-top--md {
+    margin-top: var(--space-md);
+}
+
+.margin-top--sm {
+    margin-top: var(--space-sm);
+}
+
+.margin-top--lg {
+    margin-top: var(--space-lg);
+}
+
+.margin-top--xl {
+    margin-top: var(--space-xl);
+}
+
+.margin-top--xxl {
+    margin-top: var(--space-xxl);
+}
+
+.margin-bottom, .margin-bottom--md {
+    margin-bottom: var(--space-md);
+}
+
+.margin-bottom--sm {
+    margin-bottom: var(--space-sm);
+}
+
+.margin-bottom--lg {
+    margin-bottom: var(--space-lg);
+}
+
+.margin-bottom--xl {
+    margin-bottom: var(--space-xl);
+}
+
+.margin-bottom--xxl {
+    margin-bottom: var(--space-xxl);
+}
+
+@include breakpoint(md) {
+    .margin-top, .margin-top--md {
+        margin-top: var(--space-lg);
+    }
+    
+    .margin-top--sm {
+        margin-top: var(--space-md);
+    }
+    
+    .margin-top--lg {
+        margin-top: var(--space-xl);
+    }
+    
+    .margin-top--xl {
+        margin-top: var(--space-xxl);
+    }
+    
+    .margin-top--xxl {
+        margin-top: var(--space-xxxl);
+    }
+
+    .margin-bottom, .margin-bottom--md {
+        margin-bottom: var(--space-lg);
+    }
+    
+    .margin-bottom--sm {
+        margin-bottom: var(--space-md);
+    }
+    
+    .margin-bottom--lg {
+        margin-bottom: var(--space-xl);
+    }
+    
+    .margin-bottom--xl {
+        margin-bottom: var(--space-xxl);
+    }
+    
+    .margin-bottom--xxl {
+        margin-bottom: var(--space-xxxl);
+    }
+}
