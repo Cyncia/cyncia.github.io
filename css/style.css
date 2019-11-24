@@ -257,6 +257,10 @@ a .active {
   .project-cards {
     height: 34rem;
   }
+
+  .top-bar {
+    font-size: var(--text-sm);
+  }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -264,6 +268,10 @@ a .active {
 
   .project-cards {
     height: 36rem;
+  }
+
+  .top-bar {
+    font-size: var(--text-xs);
   }
 }
 /* ************************************** */
