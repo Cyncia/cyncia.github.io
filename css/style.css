@@ -249,6 +249,10 @@ a .active {
   .project-cards {
     height: 32rem;
   }
+
+  .top-bar {
+    font-size: var(--text-sm);
+  }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -256,6 +260,10 @@ a .active {
 
   .project-cards {
     height: 34rem;
+  }
+
+  .top-bar {
+    font-size: var(--text-xs);
   }
 }
 
