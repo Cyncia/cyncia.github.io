@@ -13,8 +13,8 @@ style="margin: 2rem 0 0 10rem;"
 		</div>
 
 		<!-- TODO: collapsible -->
-		<div class="col">
-	     	<ul class="nav ml-auto justify-content-end">
+		<div class="col navb">
+	     	<ul class="nav ml-auto justify-content-end" id="navItems">
 			  <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 			  <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
 			  <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
@@ -37,5 +37,35 @@ style="margin: 2rem 0 0 10rem;"
 
 <div class="header"> </div>
 
+<script>
+    $(document).ready(function () {
+        var location = window.location.href;
+        $('#navItems li a').each(function(){
+            if(location.indexOf(this.href)>-1) {
+               $(this).parent().addClass('active');
+            }
+        });
+    });
+</script>
 
 
+<!--
+// these don't work b/c I redirect to a new page when a link is clicked
+// https://stackoverflow.com/questions/34830091/navigation-bar-active-class-not-working-correctly-when-route-to-another-link
+<script>
+	// NavBar Active Links
+	$(".nav .nav-link").on("click", function(){
+		console.log('hi');
+	   $(".nav").find(".active").removeClass("active");
+	   $(this).addClass("active");
+	});
+</script>
+
+<script type="text/javascript">
+	$(document).on("click", "ul li", function () {
+		console.log('hi');
+		$('.navbar li').removeClass('active');
+		$(this).addClass("active");
+	})
+</script>
+-->
