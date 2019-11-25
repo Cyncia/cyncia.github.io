@@ -54,48 +54,46 @@
 */
 
 body {
-    font-size: var(--text-base-size);
-    font-family: var(--font-primary);
-    color: var(--color-text);
+  font-size: var(--text-base-size);
+  font-family: var(--font-primary);
+  color: var(--color-text);
 }
 
 h1, h2, h3, h4, form legend {
-    color: var(--color-text-heading);
-    margin-bottom: var(--space-xxs);
-    line-height: var(--heading-line-height);
+  color: var(--color-text-heading);
+  margin-bottom: var(--space-xxs);
+  line-height: var(--heading-line-height);
 }
 
 h1 {
-    font-size: var(--text-xxl);
+  font-size: var(--text-xxl);
 }
 
 p {
-    line-height: var(--body-line-height);
-    font-size: var(--text-base-size);
+  line-height: var(--body-line-height);
+  font-size: var(--text-base-size);
 }
 
 a {
-    color: var(--color-link);
+  color: var(--color-link);
 }
 
 a:hover {
-	color: var(--color-link-hover);
-    text-decoration: none;
+  color: var(--color-link-hover);
+  text-decoration: none;
 }
 
-
-/*  .navb ul li.active */
-#navItems li.active a{
+.navbar .nav .li a:hover {
   color: var(--color-link-hover);
-  background-color: transparent;
+  text-decoration: none;
 }
 
 /* utility classes */
 .truncate {
-    // truncate text if it exceeds parent
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  // truncate text if it exceeds parent
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 
@@ -111,12 +109,23 @@ a:hover {
 }
 
 .intro {
-	margin-bottom: 3rem;
+  margin-bottom: 3rem;
   background-color: pink;
 }
 
 .logo {
-	align-items: center;
+  align-items: center;
+  font-size: var(--text-xl);
+}
+
+/*  .navb ul li.active */
+#navItems li.active a{
+  color: var(--color-link-hover);
+  background-color: transparent;
+}
+
+.navbar-nav li {
+  padding-left: var(--space-lg);
 }
 
 #page-container {
@@ -225,7 +234,7 @@ a:hover {
 }
 
 .card-img-top:hover:after {
-    opacity:1;
+  opacity:1;
 }
 
 .project-cards {
@@ -256,6 +265,10 @@ a:hover {
     height: 32rem;
   }
 
+  .navbar-nav li {
+    padding-left: var(--space-md);
+  }
+
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -269,6 +282,10 @@ a:hover {
     font-size: var(--text-base-size);
   }
 
+  .navbar-nav li {
+    padding-left: var(--space-unit);
+  }
+
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -280,6 +297,10 @@ a:hover {
 
   .top-bar {
     font-size: var(--text-base-size);
+  }
+
+  :root {
+    --text-base-size: 1.1em;
   }
 
 }
