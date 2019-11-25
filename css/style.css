@@ -71,6 +71,7 @@ h1 {
 
 p {
     line-height: var(--body-line-height);
+    font-size: var(--text-base-size);
 }
 
 a {
@@ -255,9 +256,6 @@ a:hover {
     height: 32rem;
   }
 
-  :root {
-    --text-base-size: 0.8rem;
-  }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -267,9 +265,10 @@ a:hover {
     height: 34rem;
   }
 
-  :root {
-    --text-base-size: 0.7rem;
+  .top-bar {
+    font-size: var(--text-base-size);
   }
+
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -279,9 +278,10 @@ a:hover {
     height: 36rem;
   }
 
-  :root {
-    --text-base-size: 0.6rem;
+  .top-bar {
+    font-size: var(--text-base-size);
   }
+
 }
 /* ************************************** */
 
