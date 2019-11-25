@@ -65,6 +65,10 @@ h1, h2, h3, h4, form legend {
     line-height: var(--heading-line-height);
 }
 
+h1 {
+    font-size: var(--text-xxl);
+}
+
 p {
     line-height: var(--body-line-height);
 }
@@ -251,8 +255,8 @@ a:hover {
     height: 32rem;
   }
 
-  .top-bar {
-    font-size: var(--text-sm);
+  :root {
+    --text-base-size: 0.8rem;
   }
 }
 
@@ -263,8 +267,8 @@ a:hover {
     height: 34rem;
   }
 
-  .top-bar {
-    font-size: var(--text-xs);
+  :root {
+    --text-base-size: 0.7rem;
   }
 }
 
@@ -273,6 +277,10 @@ a:hover {
 
   .project-cards {
     height: 36rem;
+  }
+
+  :root {
+    --text-base-size: 0.6rem;
   }
 }
 /* ************************************** */
