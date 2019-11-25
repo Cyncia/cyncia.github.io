@@ -79,12 +79,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-link-hover);
-  text-decoration: none;
-}
-
-.navbar .nav .li a:hover {
-  color: var(--color-link-hover);
+  color: var(--color-link-hover) !important;
   text-decoration: none;
 }
 
@@ -309,5 +304,15 @@ a:hover {
 
 
 
+/* ISSUES 
 
+- collapse feature doesnt show up on my phone 
+- navbar icon needs to be changed
+- navbar hover is diff color
+
+
+
+
+
+*/
 
