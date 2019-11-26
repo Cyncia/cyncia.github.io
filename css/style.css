@@ -125,6 +125,9 @@ a:hover {
   padding-top: var(--space-lg);
   background-color: rgba(255, 255, 255, 0.85);
   transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease; 
+  -o-transition: all 0.8s ease;
 }
 
 .top-bar {
@@ -132,6 +135,9 @@ a:hover {
   font-family: var(--font-secondary);
   /* background-color: rgba(255, 255, 255, 0.85); */
   transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
 }
 
 .header {
