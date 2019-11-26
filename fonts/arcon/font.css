@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Arcon-Regular';
+  src: url('Arcon-Regular.eot');
+  src: url('Arcon-Regular.eot?#iefix') format('embedded-opentype'),
+       url('Arcon-Regular.svg#Arcon-Regular') format('svg'),
+       url('Arcon-Regular.ttf') format('truetype'),
+       url('Arcon-Regular.woff') format('woff'),
+       url('Arcon-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
