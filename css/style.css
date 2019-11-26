@@ -328,6 +328,11 @@ a:hover {
 /* Large devices (desktops, less than 1200px) */
 @media screen and (max-width: 1199.98px) {
 
+  .sidenav {
+    background-color: blanchedalmond;
+    width: var(--space-xxxl);
+  }
+
 }
 
 /* Medium devices (tablets, less than 992px) */
@@ -339,6 +344,11 @@ a:hover {
 
   .navbar-nav li {
     padding-left: var(--space-md);
+  }
+
+  .sidenav {
+    background-color: red;
+    width: var(--space-xl);
   }
 
 }
@@ -358,6 +368,11 @@ a:hover {
     padding-left: var(--space-unit);
   }
 
+  .sidenav {
+    background-color:aliceblue;
+    width: var(--space-lg);
+  }
+
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -375,6 +390,11 @@ a:hover {
     --text-base-size: 1.1em;
   }
 
+  .sidenav {
+    background-color: coral;
+    width: var(--space-sm);
+  }
+
 }
 /* ************************************** */
 
@@ -385,7 +405,7 @@ a:hover {
 
 - navbar icon needs to be changed
 - navbar hover color fixed but applies to all hoverable text (a)
-- fixed top + opacity 
+- fixed navbar doesn't work on mobile
 
 // resume.html
 - externally link option
