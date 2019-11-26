@@ -4,7 +4,7 @@ row style="background-color: white; padding: 8px 0 8px 0; box-shadow: 0px 0px 5p
 style="margin: 2rem 0 0 10rem;"
  style="margin: 2rem 10rem 0 0;"
  -->
-<div class="container">
+<div class="container fixed-top" id="top">
 	<nav class = "navbar navbar-expand-sm navbar-light top-bar">
 		<a class="navbar-brand" href="index.html">blah</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseContent">
@@ -18,40 +18,8 @@ style="margin: 2rem 0 0 10rem;"
 			  <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
 			</ul>
 	    </div>
-
-
-		<!-- Alternative to navbar
-		<div class="col-9">
-	     	<ul class="tabs">
-	     	  <li><a href="#">About</a></li>
-			  <li><a href="#">Projects</a></li>
-			  <li><a href="#">Resume</a></li>
-			</ul>
-	    </div>
-		-->
 	</nav>
 </div>
-
-<!--
-<div class="container">
-<div class="top-bar">
-	<div class="row ml-auto">
-		<div class="col-3 logo" style="padding-left: 0"> 
-			<a class="navbar-brand" href="index.html">blah</a>
-		</div>
-
-		<div class="col-9 navb" style="padding-right: 0">
-	     	<ul class="nav ml-auto justify-content-end" id="navItems">
-			  <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-			  <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-			  <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-			</ul>
-	    </div>
-
-	</div>
-</div>
-</div>
--->
 
 <div class="header"> </div>
 
@@ -66,8 +34,28 @@ style="margin: 2rem 0 0 10rem;"
     });
 </script>
 
+<script>
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 100) {
+    document.getElementById("top").style.padding = "0px 1em 0px 1em";
+  } else {
+    document.getElementById("top").style.padding = "2em 1em 0px 1em";
+  }
+});
+</script>
 
 <!--
+<script>
+	$(window).scroll(function() {
+	  if ($(document).scrollTop() > 100) {
+		$('.n').removeClass('top');
+	  } else {
+		$('.n').addClassClass('top');
+	  }
+	});
+</script>
+
+
 // these don't work b/c I redirect to a new page when a link is clicked
 // https://stackoverflow.com/questions/34830091/navigation-bar-active-class-not-working-correctly-when-route-to-another-link
 <script>
