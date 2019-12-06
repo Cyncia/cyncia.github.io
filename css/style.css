@@ -119,6 +119,9 @@ a:hover {
   white-space: nowrap;
 }
 
+.highlight {
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFD0AE 50%);
+}
 
 /* **** UPPER PAGE **** */
 #top {
@@ -405,7 +408,7 @@ a:hover {
 
 - navbar icon needs to be changed
 - navbar hover color fixed but applies to all hoverable text (a)
-- fixed navbar doesn't work on mobile
+- transition to projects section (kept within index instead of new page)
 
 // resume.html
 - externally link option
