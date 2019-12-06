@@ -53,6 +53,10 @@
     --color-link: gray;
     --color-link-hover: #F4989C;
 
+    --light-orange: #FFD0AE;
+    --light-purple: #EEE3F9;
+
+
     /* spacing */
     --space-unit: 1em;
     --space-xxxs: calc(0.25 * var(--space-unit));
@@ -121,6 +125,10 @@ a:hover {
 
 .highlight {
   background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFD0AE 50%);
+}
+
+.highlight-cd {
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, var(--light-purple) 50%);
 }
 
 /* **** UPPER PAGE **** */
