@@ -46,7 +46,7 @@
 
     /* line-height */
     --heading-line-height: 1.2;
-    --body-line-height: 1.45;
+    --body-line-height: 1.55;
 
     /* colors */
     --color-text: #333;
@@ -164,6 +164,10 @@ a:hover {
   font-size: var(--text-xl);
 }
 
+.info {
+  margin-bottom: 1rem;
+}
+
 /*  .navb ul li.active */
 #navItems li.active a{
   color: var(--color-link-hover);
@@ -225,7 +229,7 @@ a:hover {
   color: silver;
   text-align: center;
   position: absolute;
-  font-family: var(--font-secondary);
+  font-family: var(--font-backup);
   font-weight: lighter;
 }
 /* ************************************** */
