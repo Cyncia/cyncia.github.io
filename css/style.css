@@ -232,7 +232,6 @@ a:hover {
   font-family: var(--font-backup);
   font-weight: lighter;
 }
-/* ************************************** */
 
 
 /* **** TABS (topbar non-navbar) **** */
@@ -264,7 +263,6 @@ a:hover {
   background-color: pink;
 }
 
-/* ************************************** */
 
 /* **** CARD DECKS **** */
 .card {
@@ -334,9 +332,19 @@ a:hover {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
+.persona {
+  margin: 1rem 0 3rem 0;
+}
 
-/* ************************************** */
+.persona-img {
+  height: 150px;
+  width: auto;
+  margin: 2rem 0 2rem 0;
+}
 
+.subsection {
+  border-left: 2px solid var(--light-orange);
+}
 
 
 /* **** MEDIA INQUIRIES **** */
@@ -421,6 +429,8 @@ a:hover {
 - navbar icon needs to be changed
 - navbar hover color fixed but applies to all hoverable text (a)
 - transition to projects section (kept within index instead of new page)
+- projects TAB, add top margin 
+- resume pg, externally link needs diff color
 
 // resume.html
 - externally link option
