@@ -333,7 +333,7 @@ a:hover {
 }
 
 .persona {
-  margin: 3rem 0 3rem 0;
+  margin: 3rem 0 2rem 0;
 }
 
 .persona-img {
@@ -453,6 +453,7 @@ a:hover {
 - transition to projects section (kept within index instead of new page)
 - projects TAB, add top margin 
 - resume pg, externally link needs diff color
+- survey icon
 
 // resume.html
 - externally link option
