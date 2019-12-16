@@ -333,7 +333,7 @@ a:hover {
 }
 
 .persona {
-  margin: 1rem 0 3rem 0;
+  margin: 3rem 0 3rem 0;
 }
 
 .persona-img {
@@ -344,8 +344,30 @@ a:hover {
 
 .subsection {
   border-left: 2px solid var(--light-orange);
+  margin-top: 2rem;
 }
 
+.company-img {
+  height: 32px;
+  width: auto;
+}
+
+.caption {
+  font-size: var(--text-sm);
+  padding-top: 0.8rem;
+  font-weight: lighter;
+  color: lightgray;
+  font-style: italic;
+}
+
+.top-details {
+  font-weight: bolder;
+  padding-bottom: 0px; 
+  margin-bottom: 0px;
+  font-size: var(--text-sm);
+  font-family: var(--font-secondary);
+  color: coral;
+}
 
 /* **** MEDIA INQUIRIES **** */
 /* Large devices (desktops, less than 1200px) */

@@ -37,19 +37,30 @@
     <div class="container intro">
         
     	<h1>Phare</h1>
-    	<p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo.</p>
+    	<p>Fast and convenient photo sharing with friends and family.</p>
     </div>
 
     <div class="container intro">
-      <p>Time: Summer 2018</p>
-      <p>Role: Mobile Developer, UI Designer </p>
-      <p>Software Used: Figma, XCode (Swift)</p>
+      <div class="row top-details">
+        <div class="col"> <p>Time</p> </div>
+        <div class="col"> <p>Role</p> </div>
+        <div class="col"> <p>Software</p> </div>
+        <!--<p>Time: Summer 2018</p>
+        <p>Role: Mobile Developer, UI Designer </p>
+        <p>Software Used: Figma, XCode (Swift)</p>-->
+      </div>
+
+      <div class="row">
+        <div class="col"> <p>Summer 2018</p> </div>
+        <div class="col"> <p>Mobile Developer, UI Designer</p> </div>
+        <div class="col"> <p>Figma, XCode (Swift)</p> </div>
+      </div>
     </div>
 
     <div class="container intro" id="about">
       <h3><span class="highlight">The Problem</span></h3>
-      <p>In this age of digital tech, cameras are everywhere. Taking a picture is so easy now but the real issue is how to share these photos in a convenient and efficient way. As an avid traveller, I love going on trips and taking photos. But, at the end of every trip, I spend hours uploading my images, sorting out which image goes to who, sharing them with others, and downloading other people’s pictures. As a personal project with friends, I decided to create an app that provides a fast and convenient way for users to upload, share, and download images while also improving my technical skills.</p>
-    </div>
+      <p>In this age of digital tech, cameras are everywhere. Taking a picture is so easy now, but the real issue is how to share these photos in a convenient and efficient way. As an avid traveller, I love going on trips and taking photos. But, at the end of every trip, I spend hours uploading my images, distributing them with others, and downloading other people’s pictures. As a personal project with friends, I decided to create an app that provides a fast and convenient way for users to upload, distribute, and download images while also improving my technical skills.</p>
+      </div>
 
     <div class="container intro">
       <h3><span class="highlight">Why</span></h3>
@@ -57,14 +68,53 @@
       <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera </p>
     </div> 
      
+    <!-- research section -->
     <div class="container intro">
       <h3><span class="highlight">Research</span></h3>
       <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera </p>
-      
+     
+    <!-- user research subsection -->
+    <div class="subsection">
+      <h4>&thinsp; User Research</h4>
+    </div>
+    <p>After reading through various forums and user posts, I identified common issues that people have with photo sharing among friends and family.</p>
+
+    <!-- end of user research subsection -->
+
+    <!-- competitor research subsection -->
+    <div class="subsection">
+      <h4>&thinsp; Competitor Reserach</h4>
+    </div>
+    <p>To understand why the listed user issues exist and persist, I researched current and alternative platforms many users use. There's a wide variety of services and platforms people use ranging from group messages to shared cloud services to private sharing apps.</p> 
+    <div class="container">
+      <div class="row" style="padding: 0 3rem 0 3rem; margin-top: 2rem;">
+        <div class="col"> <img class="company-img" src="../images/photos.png" alt="google photos"> </div>
+        <div class="col"> <img class="company-img" src="../images/google-drive.png" alt="google drive"> </div>
+        <div class="col"> <img class="company-img" src="../images/facebook.png" alt="facebook"> </div>
+        <div class="col"> <img class="company-img" src="../images/smugmug.png" alt="smugmug"> </div>
+        <div class="col"> <img class="company-img" src="../images/dropbox.png" alt="dropbox"> </div>
+        <div class="col"> <img class="company-img" src="../images/flickr.png" alt="flickr"> </div>
+      </div>
+      <div class="row justify-content-center caption">
+        <p>Popular services (not pictured: cozi, tiny beans, 23snaps, telegram)</p>
+      </div>
+    </div>
+    <p>However, many of these platforms currently </p>
+    <ul>
+      <li>require an account to be made or are connected to social media</li>
+      <li>gather the information of other users, such as email or phone number</li>
+      <li>require the user to specifically select which photos to upload</li>
+      <li>only enable the user to download images one by one</li>
+      <li>may compress the image quality</li>
+    </ul>
+     
+    <!-- end of competitor research subsection -->
+
+    <!-- persona subsection -->  
     <div class="subsection">
       <h4>&thinsp; Personas</h4>
     </div>
-     
+    <p>To better understand who our users might be, I created 2 personas based off of the research that was conducted. These personas </p>
     <div class="container persona">
       <div class="row justify-content-center"> 
         <div class="col-5 mx-auto justify-content-center text-center">
@@ -79,15 +129,17 @@
           <h5> Meet Emily</h5>
           <img class="persona-img" src="../images/emily.png" alt="emily">
           <div class="container text-left">
-            <p>Emily just started college and ended up taking many pictures with her family during her spring break. Soon, Emily and her siblings will be rushing back to their own busy lives, thus Emily wants to easily exchange photos with them before they go.</p>
+            <p>Emily just started college and ended up taking many pictures with her family during her spring break. Soon, Emily and her siblings will be rushing back to their own busy lives, so Emily wants to easily exchange photos with them before they go.</p>
           </div>
         </div>
       </div>
-    </div>
+     </div>
+    
+     <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera </p>
+    
+     <!-- end of persona subsection -->
 
-
-      <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera </p>
-    </div>
+    </div> <!-- end of container intro // research section -->
 
     <div class="container intro">
       <h3><span class="highlight">Solution</span></h3>
@@ -125,7 +177,7 @@
 <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-
+<div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
 -->
 
