@@ -347,9 +347,21 @@ a:hover {
   margin-top: 2rem;
 }
 
+.company-detail {
+  font-size: 11px; 
+  padding: 0.5rem 0 0 1rem; 
+  text-align:left;
+}
+
 .company-img {
   height: 32px;
   width: auto;
+}
+
+.link-img {
+  height: 14px;
+  width: auto;
+  padding-bottom: 2px;
 }
 
 .caption {
