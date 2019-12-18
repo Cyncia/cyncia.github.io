@@ -233,6 +233,18 @@ a:hover {
     box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);
 }
 
+/* #card-link:hover {
+    -moz-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);
+} */
+
+.box:hover {
+    -moz-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);
+}
+
 #page-container {
   position: relative;
   min-height: 100vh;
@@ -535,6 +547,8 @@ a:hover {
 - transition to projects section (kept within index instead of new page)
 - projects TAB, add top margin 
 - resume pg, externally link needs diff color
+
+- other projects section, add carousel?
 - enable dark mode and color blind mode
 
 // resume.html
