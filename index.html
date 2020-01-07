@@ -13,16 +13,56 @@
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../script/script.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
 
     <title>Cynthia Zhou</title>
   </head>
 
   <header>
-    <div id="nav-placeholder"> </div>
+    <div> 
+      <div class="container fixed-top" id="top">
+        <nav class = "navbar navbar-expand-sm navbar-light top-bar">
+            <a class="navbar-brand" href="index.html"> <div class="logo-container"> <img class="logo-img" src="images/me.JPG" alt="cynthia zhou"> </div> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navb navbar-collapse collapse" id="collapseContent">
+                <ul class="navbar-nav ml-auto justify-content-end" id="navItems">
+                  <li class="nav-item"><a class="nav-link" href="html/about.html">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
+                  <li class="nav-item"><a class="nav-link" href="html/resume.html">Resume</a></li>
+                </ul>
+            </div>
+          </nav>
+      </div>
+
+      <div class="header"> </div>
+
+      <script>
+          $(document).ready(function () {
+              var location = window.location.href;
+              $('#navItems li a').each(function(){
+                  if(location.indexOf(this.href)>-1) {
+                     $(this).parent().addClass('active');
+                  }
+              });
+          });
+      </script>
+
+      <script>
+      $(window).scroll(function() {
+        if ($(document).scrollTop() > 100) {
+          document.getElementById("top").style.padding = "0px 1em 0px 1em";
+        } else {
+          document.getElementById("top").style.padding = "2em 1em 0px 1em";
+        }
+      });
+      </script>
+    </div>
   </header>
 
   <body class="animate-in">
@@ -41,7 +81,7 @@
     <!-- <a href="phare.html"> </a> DOESNT WORK & COMP ISSUES-->
       <div class="project-cards">
         <div class="bigcard-img-container">
-          <img class="bigcard-img-top" src="../images/Phare.png" alt="Card image cap">
+          <img class="bigcard-img-top" src="images/Phare.png" alt="Card image cap">
         </div>
         <div class="card-body">
           <h5 class="card-title">Bruin Bite</h5>
@@ -52,7 +92,7 @@
       
       <div class="project-cards">
         <div class="bigcard-img-container">
-          <a href="phare.html"> <img class="bigcard-img-top" src="../images/Phare.png" alt="Phare"> </a>
+          <a href="phare.html"> <img class="bigcard-img-top" src="images/Phare.png" alt="Phare"> </a>
         </div>
         <div class="card-body">
           <h5 class="card-title">Phare</h5>
@@ -75,7 +115,7 @@
             <h6 id="other-header">/ Case Study</h6>
             <div class="col box">
             <a href="credesign.html" id="card-link">
-            <div class="card-img-container"> <img class="card-img-top" src="../images/craigslist.png" alt="craigslist"> </div>
+            <div class="card-img-container"> <img class="card-img-top" src="images/craigslist.png" alt="craigslist"> </div>
             <div class="card-body">
               <h5 class="card-title">Craigslist Redesign</h5>
               <p class="card-text"><small class="text-muted">April - June 2019</small></p>
@@ -91,7 +131,7 @@
             <h6 id="other-header">/ Mobile Dev</h6>
             <div class="col box">
             <a href="compass.html" id="card-link"> 
-            <div class="card-img-container"> <img class="card-img-top" src="../images/compass.png" alt="compass"> </div>
+            <div class="card-img-container"> <img class="card-img-top" src="images/compass.png" alt="compass"> </div>
             <div class="card-body">
               <h5 class="card-title">Compass</h5>
               <p class="card-text"><small class="text-muted">February 2019</small></p>
@@ -107,7 +147,7 @@
             <h6 id="other-header">/ Programming</h6>
             <div class="col box">
             <a href="cresst.html" id="card-link"> 
-            <div class="card-img-container"> <img class="card-img-top" src="../images/cresst.png" alt="cresst"> </div>
+            <div class="card-img-container"> <img class="card-img-top" src="images/cresst.png" alt="cresst"> </div>
             <div class="card-body">
               <h5 class="card-title">CRESST Website</h5>
               <p class="card-text"><small class="text-muted">April - June 2019</small></p>
@@ -135,7 +175,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../script/script.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
 
 
   </body>
