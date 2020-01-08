@@ -305,6 +305,39 @@ a:hover {
   to {opacity 1;}
 }
 
+#fader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  pointer-events: none;
+  background: white;
+  animation-duration: 600ms;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-out {
+  from {opacity: 1}
+  to {opacity: 0}
+}
+
+@keyframes fade-in {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+#fader.fade-out {
+  opacity: 0;
+  animation-name: fade-out;
+}
+
+#fader.fade-in {
+  opacity: 1;
+  animation-name: fade-in;
+}
+
 
 /* **** TABS (topbar non-navbar) **** */
 .tabs {
@@ -593,7 +626,6 @@ a:hover {
 - transition to projects section (kept within index instead of new page)
 - projects TAB, add top margin 
 - resume pg, externally link needs diff color
-- fix craigslist image
 
 - other projects section, add carousel?
 - enable dark mode and color blind mode
@@ -602,3 +634,11 @@ a:hover {
 - externally link option
 */
 
+
+/*
+Credit:
+- https://christopheraue.net/design/fading-pages-on-load-and-unload
+
+
+
+*/
