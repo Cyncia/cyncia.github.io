@@ -460,7 +460,7 @@ a:hover {
 
 #card-link {
   background-color: none;
-  color: black;
+  color: black !important;
 }
 
 #card-link a {
@@ -638,7 +638,7 @@ a:hover {
 /*
 Credit:
 - https://christopheraue.net/design/fading-pages-on-load-and-unload
-
+- https://css-tricks.com/snippets/css/typewriter-effect/
 
 
 */
