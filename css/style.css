@@ -241,6 +241,40 @@ a:hover {
   color: #f1f1f1;
 }
 
+.icon-bar {
+  position: fixed;
+  top: 80%;
+  right: 0;
+  margin-right: 2rem;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+
+}
+
+.icon-bar a:hover {
+  color: black;
+}
+
+.github {
+
+}
+
+.dribbble {
+
+}
+
+.linkedin {
+  
+}
+
+
 /*
 .card.features:hover {
     transform: translateY(-3px);
@@ -460,15 +494,15 @@ a:hover {
 
 #card-link {
   background-color: none;
-  color: black !important;
+  color: none !important;
 }
 
 #card-link a {
-  color: black !important;
+  color: none !important;
 }
 
 #card-link a:hover {
-  color: black !important;
+  color: none !important;
 }
 
 .project-cards {
