@@ -111,7 +111,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-link-hover) !important;
+  color: var(--color-link-hover);
   text-decoration: none;
 }
 
@@ -158,7 +158,8 @@ a:hover {
 #other-header {
   font-weight: normal;
   font-family: var(--font-secondary);
-  margin-top: 3rem;
+  font-size: var(--text-base-size);
+  padding-top: 1rem;
 }
 
 .intro {
@@ -271,7 +272,7 @@ a:hover {
 }
 
 .linkedin {
-  
+
 }
 
 
@@ -373,36 +374,6 @@ a:hover {
 }
 
 
-/* **** TABS (topbar non-navbar) **** */
-.tabs {
-  list-style: none;
-  list-style-type: none;
-  margin-right: 4rem;
-  padding: 0;
-  background-color: green;
-  float: right;
-}
-
-.tabs a {
-  text-decoration: none;
-  font-size: 18px;
-  color: #5C5C5C;
-}
-
-.tabs a:hover {
-  /*border-bottom: 1px solid #60B078;*/
-  color: #CB3FD7;
-  text-decoration: none;
-  background-color: transparent !important;
-}
-
-.tabs li {
-  display: inline-block;
-  padding: 0 30px 0 30px;
-  background-color: pink;
-}
-
-
 /* **** CARD DECKS **** */
 .card {
   /* width: 30rem;
@@ -466,7 +437,7 @@ a:hover {
 
 .bigcard-img-top {
   width: 100%;
-  height: 100%;
+  height: 15rem;
   object-fit: cover;
   object-position: center;
   transition: all .4s ease-in-out;
@@ -493,7 +464,7 @@ a:hover {
 }
 
 #card-link {
-  background-color: none;
+  background-color: none !important;
   color: none !important;
 }
 
@@ -507,7 +478,6 @@ a:hover {
 
 .project-cards {
   width: auto;
-  height: 30rem;
   margin-bottom: var(--space-lg);
   border-radius: 0;
   border-width: 0;
@@ -515,10 +485,6 @@ a:hover {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
-.projects {
-  margin-bottom: 10rem;
-
-}
 
 .persona {
   margin: 1.5rem 0 1.5rem 0;
@@ -569,6 +535,10 @@ a:hover {
   color: coral;
 }
 
+#separator {
+  margin-top: 5rem;
+}
+
 /* **** MEDIA INQUIRIES **** */
 /* Large devices (desktops, less than 1200px) */
 @media screen and (max-width: 1199.98px) {
@@ -583,10 +553,6 @@ a:hover {
 /* Medium devices (tablets, less than 992px) */
 @media screen and (max-width: 991.98px) {
 
-  .project-cards {
-    height: 32rem;
-  }
-
   .navbar-nav li {
     padding-left: var(--space-md);
   }
@@ -600,10 +566,6 @@ a:hover {
 
 /* Small devices (landscape phones, less than 768px) */
 @media screen and (max-width: 767.98px) {
-
-  .project-cards {
-    height: 34rem;
-  }
 
   .top-bar {
     font-size: var(--text-base-size);
@@ -623,10 +585,6 @@ a:hover {
 /* Extra small devices (portrait phones, less than 576px) */
 @media screen and (max-width: 575.98px) {
 
-  .project-cards {
-    height: 36rem;
-  }
-
   .top-bar {
     font-size: var(--text-base-size);
   }
@@ -638,6 +596,12 @@ a:hover {
   .sidenav {
     background-color: coral;
     width: var(--space-sm);
+  }
+  #separator {
+    margin-top: var(--space-xxl);
+  }
+  #other-header {
+    font-size: var(--text-md);
   }
 
 }
