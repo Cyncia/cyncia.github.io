@@ -315,7 +315,7 @@ a:hover {
   color: silver;
   text-align: center;
   position: absolute;
-  font-family: var(--font-backup);
+  font-family: var(--font-secondary);
   font-weight: lighter;
 }
 
@@ -622,7 +622,7 @@ a:hover {
 
 - navbar hover color fixed but applies to all hoverable text (a)
 - transition to projects section (kept within index instead of new page)
-- projects TAB, add top margin 
+- footer not showing up
 - resume pg, externally link needs diff color
 
 - other projects section, add carousel?

@@ -42,7 +42,7 @@ $(function() {
                 }
 
                 $('html, body').animate({
-                    scrollTop: h - 180
+                    scrollTop: h - 100
                 }, 1000, function() {
                     // Callback after animation
                     // Must change focus!
