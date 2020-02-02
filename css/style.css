@@ -408,6 +408,11 @@ a:hover {
   font-size: var(--text-base-size);
 }
 
+.card-text-body {
+  line-height: var(--body-line-height);
+  font-size: var(--text-md);
+}
+
 .card-body {
   margin-left: 0px;
   padding-left: 0px;
@@ -485,7 +490,6 @@ a:hover {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
-
 .persona {
   margin: 1.5rem 0 1.5rem 0;
 }
@@ -496,13 +500,18 @@ a:hover {
   margin: 2rem 0 2rem 0;
 }
 
+.phare-sketch {
+  height: 350px;
+  width: auto;
+}
+
 .subsection {
   border-left: 2px solid var(--light-orange);
   margin-top: 2rem;
 }
 
 .company-detail {
-  font-size: 11px; 
+  font-size: 12px; 
   padding: 0.5rem 0 0 1rem; 
   text-align:left;
 }
@@ -516,6 +525,41 @@ a:hover {
   height: 14px;
   width: auto;
   padding-bottom: 2px;
+}
+
+.two-img {
+  width: 100%;
+}
+
+.gallery{
+  padding: 5px;
+  flex: 50%;
+}
+
+.gallery2 {
+  flex: 16.66%; 
+  padding: 2px;
+}
+
+.grid-gallery {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.grid-gallery img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  padding: 1rem;
+}
+
+.grid-gallery-row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
 .caption {
@@ -532,7 +576,12 @@ a:hover {
   margin-bottom: 0px;
   font-size: var(--text-sm);
   font-family: var(--font-secondary);
-  color: coral;
+  color: var(--light-orange);
+}
+
+.summary {
+  font-size: var(--text-md);
+  font-style: italic;
 }
 
 #separator {
@@ -597,19 +646,32 @@ a:hover {
     background-color: coral;
     width: var(--space-sm);
   }
+
   #separator {
     margin-top: var(--space-xxl);
   }
+
   #other-header {
     font-size: var(--text-md);
   }
 
+  .grid-gallery {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-height: 525px) {
 
   .landing {
     transform: translateY(0px);
+  }
+
+  .grid-gallery {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
   }
 
 }
