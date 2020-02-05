@@ -516,6 +516,10 @@ a:hover {
   text-align:left;
 }
 
+.company-img {
+  height: 2rem;
+}
+
 .icon-img {
   height: 1rem;
   width: auto;
