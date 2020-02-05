@@ -32,7 +32,7 @@
     --font-headers: Arcon-Regular;
 
     /* set base values */
-    --text-base-size: 1em;
+    --text-base-size: 1.05em;
     --text-scale-ratio: 1.25;
 
     /* type scale */
@@ -516,9 +516,16 @@ a:hover {
   text-align:left;
 }
 
-.company-img {
-  height: 32px;
+.icon-img {
+  height: 1rem;
   width: auto;
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+.icon-img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
 }
 
 .link-img {
@@ -527,16 +534,23 @@ a:hover {
   padding-bottom: 2px;
 }
 
-.two-img {
+.twoimg-gallery {
+  max-height: 30rem;
+  display: flex;
+  justify-content: center;
+}
+
+.fullwidth-img {
   width: 100%;
+  height: auto;
 }
 
-.gallery{
-  padding: 5px;
-  flex: 50%;
+.fullheight-img {
+  height: 100%;
+  width: auto;
 }
 
-.gallery2 {
+.row-gallery {
   flex: 16.66%; 
   padding: 2px;
 }
@@ -585,7 +599,7 @@ a:hover {
 }
 
 #separator {
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 /* **** MEDIA INQUIRIES **** */
@@ -660,6 +674,12 @@ a:hover {
     flex: 100%;
     max-width: 100%;
   }
+
+  .row-gallery {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-height: 525px) {
@@ -669,6 +689,12 @@ a:hover {
   }
 
   .grid-gallery {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .row-gallery {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;

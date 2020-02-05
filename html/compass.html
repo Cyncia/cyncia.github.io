@@ -35,147 +35,117 @@
     -->
 
     <div class="container intro" style="margin-top:5rem;">
-        <div class="row">
-        <div class="col-9">
-         <h1>Compass</h1>
-         <p class="summary">
-          Who doesn't love to travel? 
+      <div class="row">
+      <div class="col-7">
+       <h1>Compass</h1>
+       <p class="summary">
+        Who doesn't love to travel? 
 
-          We wanted to create an easy way for people to plan their vacations.
+        We wanted to create an easy way for people to plan their vacations.
 
-          Compass allows you to simply type in your vacation destination, see events, and add to your custom itinerary.
-
-
-
-         </p>
+        Compass allows you to simply type in your vacation destination, see events, and add to your custom itinerary.
+       </p>
+       <p><small>Check out our project on&thinsp;
+          <a href="https://github.com/aliyuanh/Compass" target="_blank"> <span title="Github"> <img src="../images/github.png" class="icon-img" alt="github"> </span> </a>
+          <a href="https://devpost.com/software/compass-zqw68j" target="_blank"> <span title="Devpost"> <img src="../images/devpost.png" class="icon-img" alt="devpost"> </span> </a>
+        </small></p>
       </div>
             
-      <div class="col-3">
+      <div class="col-2">
             <div class="row"> <div class="col"> <p class="top-details">Time</p> <p>February 2019</p> </div></div>
             <div class="row"> <div class="col"> <p class="top-details">Role</p> <p>Mobile Developer</p> </div></div>
             <div class="row"> <div class="col"> <p class="top-details">Software</p> <p>Expo (React Native)</p> </div></div>
-
       </div>
+      
+      <div class="col-3">
+        <img src="../images/compass/compass.png" class="fullwidth-img" alt="compass-logo">
+      </div>
+
       </div>
     </div>
 
 
-    <div class="container">
+    <div class="container" id="separator">
+      <h3><span class="highlight">Introduction</span></h3>
       <p>Last year, I attended AthenaHacks 2019 (hackathon) at USC to partake in fun workshops and learn new things. At AthenaHacks, I formed a group with 3 other students to tackle a problem we all faced before -- planning a trip. Furthermore, my teammates and I all wanted to try something new, so we attended various workshops together and decided to work with a language and environment we were not previously familiar with. </p>
-
-      <div class="container">
-        <div class="row justify-content-center" style="max-height: 50px; padding: 0 4rem; background-color: red; display: flex; flex-wrap: wrap; overflow: hidden;">
-          <div class="col">
-            <img src="../images/compass/athenahacks.png" alt="athenahacks" style="width: 100%; object-fit: contain;">
-          </div>
-        </div>
-        <div class="row" style="display: flex; flex-wrap: wrap;">
-            <div class="col-md-4 offset-md-2">
-              <img src="../images/compass/compass.png" class="" alt="compass-logo" style="width: 100%">
-            </div>
-            <div class="col-md-4">
-              <img src="../images/compass/athenahacks1.jpg" class="" alt="athenahacks1" style="width: 100%">
-            </div>
-          </div>
     </div>
 
     <div class="container" id="separator">
-      <p>Currently, there are various services people use to search for tourist destinations and attractions, such as Yelp and TripAdvisor, and for planning, such as Google Calendar. However, these services are reliant on user reviews and do not focus trip planning. We wanted to create an app that would allow the user to create and modify customizable itineraries based off of search results and share them with others (either for viewing or editing purposes). Often times, I have hundreds of tabs pulled out with an excel sheet to keep track of everything. Mangaging these tabs while organizing event details can be pretty tiresome. So, we thought why not allow the user to search, add, and edit all at the same time in the same platform?</p>
+      <div class="row">
+        <div class="col twoimg-gallery"> <img src="../images/compass/group.png" class="fullwidth-img" alt="athenahacks1"> </div>
+      </div>
+    </div>
+
+
+    <div class="container" id="separator">
+      <h3><span class="highlight">Ideation</span></h3>
+      <p>Currently, there are various services people use to search for tourist destinations and attractions, such as Yelp and TripAdvisor, and for planning, such as Google Calendar. However, these services are reliant on user reviews and are more free-formed. We wanted to create an app that would provide structure and guidance for trip planning. This app would allow the user to create and modify customizable itineraries based off of search results and share them with others (either for viewing or editing purposes). Often times, I have hundreds of tabs pulled out with an excel sheet to keep track of everything. Mangaging these tabs while organizing event details can be pretty tiresome. So, we thought why not allow the user to search, add, and edit all at the same time in the same platform?</p>
       
+      <div class="subsection" id="separator">
+        <h4>&thinsp; Inspiration</h4>
+      </div>
+
       <div class="container" style="padding: 0 2rem;"> 
         <div class="row grid-gallery-row"> 
           <div class="col grid-gallery">
-            <img src="../images/compass/google-trip.png" alt="google trips">
-            <img src="../images/compass/airbnb.png" alt="airbnb">
+            <img src="../images/compass/google-trip.png" alt="google trips" style="border-bottom: 1px solid lightgray; border-right: 1px solid lightgray;">
+            <img src="../images/compass/airbnb.png" alt="airbnb" style="border-right: 1px solid lightgray;">
           </div>
           <div class="col grid-gallery">
-            <img src="../images/compass/google.png" alt="google">
+            <img src="../images/compass/google.png" alt="google" style="border-bottom: 1px solid lightgray;">
             <img src="../images/compass/google-cal.png" alt="google calendar">
           </div>
         </div>
       </div>
       <p class="caption" style="text-align: center;">reference images used as inspiration</p>
 
-      <p>We wanted Compass to allow for specific searches, such as shopping centers, and for general searches, such as things to do with children. Users would first select a destination and then either search for something they have in mind or to pick an activity from a list of suggested starting points. As users add activites to their itineraries, additional details can be specified such as time and notes. Furthermore, as Compass allows users to connect their accounts to their social media accounts, users would be able to see places and services their friends recommend in Compass as opposed to reviews from the general public. Ideally, we wanted users to view their itineraries as one would looking at Google Calendars (day/week/month format). Users would be able to drag events and enlongate or shorten around to manage general trip flow or get into detail such as changing specific times.</p>
+      <div class="subsection" id="separator">
+        <h4>&thinsp; Sketch</h4>
+      </div>
+      <p>We wanted Compass to allow for specific searches, such as shopping centers, and for general searches, such as things to do with children. Users would first select a destination and then either search for something they have in mind or to pick an activity from a list of suggested starting points. As users add activites to their itineraries, additional details can be specified such as time and notes. Furthermore, as Compass allows users to connect their accounts to their social media accounts, users would be able to see places and services their friends recommend in Compass as opposed to reviews from the general public. Ideally, we wanted users to view their itineraries as one would looking at Google Calendars (day/week/month format). Users would be able to drag, enlongate, and shorten events to manage general trip flow or get into detail such as changing specific times.</p>
       
-      <div class="container"> 
-        <div class="row"> 
-          <div class="col">
-
-          </div>
+      <div class="container" id="separator"> 
+        <div class="row">
+          <div class="col twoimg-gallery">
+            <img class="fullheight-img" src="../images/compass/sketches.png">
+          </div> 
         </div>
       </div>
 
     </div>
 
     <div class="container" id="separator">
-      <div class="row">
-        <div class="col gallery2">
-          <img src="../images/compass/compass1.jpeg" class="" alt="compass1" style="width:100%;">
+      <h3><span class="highlight">Product</span></h3>
+      <p>Compass is a mobile app designed to ease planning for travel trips and vacations through flexible search functionality and customizable itinteraries. We built Compass with React Native and Javascript through <a href="https://expo.io/" target="_blank">Expo</a>. Despite our aspirations for Compass, we compromised for simpler features as we neither had the time nor the expertise to develop such an app. This was our first time using Expo and coding in React Native. Furthermore, as a hackathon project, Compass was created in a weekend's worth of time. In light of these limitations, we focused on getting the general idea of trip planning through destination searches and customizable itineraries. 
+        </p>
+
+      <div class="row" id="separator">
+        <div class="col row-gallery">
+          <img src="../images/compass/compass1.jpeg" class="fullwidth-img" alt="compass1">
         </div>
 
-        <div class="col gallery2">
-          <img src="../images/compass/compass2.jpeg" class="" alt="compass2" style="width:100%;">
+        <div class="col row-gallery">
+          <img src="../images/compass/compass2.jpeg" class="fullwidth-img" alt="compass2">
         </div>
  
-        <div class="col gallery2">
-          <img src="../images/compass/compass4.png" class="" alt="compass3" style="width:100%;">
+        <div class="col row-gallery">
+          <img src="../images/compass/compass4.png" class="fullwidth-img" alt="compass3">
         </div>
 
-        <div class="col gallery2">
-          <img src="../images/compass/compass5.jpeg" class="" alt="compass4" style="width:100%;">
+        <div class="col row-gallery">
+          <img src="../images/compass/compass5.jpeg" class="fullwidth-img" alt="compass4">
         </div>
 
-        <div class="col gallery2">
-          <img src="../images/compass/compass3.png" class="" alt="compass5" style="width:100%;">
+        <div class="col row-gallery">
+          <img src="../images/compass/compass3.png" class="fullwidth-img" alt="compass5">
         </div>
 
-        <div class="col gallery2">
-          <img src="../images/compass/compass6.png" class="" alt="compass6" style="width:100%;">
-        </div>
-      </div>
-    </div>
-
-    <div class="container" id="separator">
-      <p>Compass is a mobile app designed to ease planning for travel trips and vacations through [][].
-      
-      [][] built with React Native and Javascript through 
-        <a href="https://expo.io/" target="_blank">Expo</a>. Despite our aspirations for Compass, we compromised for a more simpler features as we neither had the time nor the expertise to develop such an app. This was our first time using Expo and coding in React Native. Furthermore, as a hackathon project, Compass was created in a weekend's worth of time. In light of these limitations, we focused on getting the general idea of trip planning through destination searches and customizable itineraries. 
-      </p>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col">
-
-          https://expo.io/
+        <div class="col row-gallery">
+          <img src="../images/compass/compass6.png" class="fullwidth-img" alt="compass6">
         </div>
       </div>
-    </div> 
-
-    <div class="container">
-      <p>Check our project out on:</p>
-
-      <div class="row">
-        <div class="col-2">
-          <a href="https://github.com/aliyuanh/Compass" target="_blank"> <span title="Github"> <img src="../images/github-image.png" class="company-img" alt="github"> </span> </a>
-        </div>
-
-        <div class="col-2">
-          <a href="https://devpost.com/software/compass-zqw68j" target="_blank"> <span title="Devpost"> <img src="../images/devpost.png" class="company-img" alt="devpost"> </span> </a>
-        </div>
-
     </div>
 
-
-    <div class="container">
-      <div class="row" style="display: flex;">
-
-        <div class="col twoimg-gallery"> <img src="../images/compass/athenahacks1.jpg" class="two-img" alt="athenahacks1"> </div>
-        <div class="col twoimg-gallery"> <img src="../images/compass/athenahacks2.jpg" class="two-img" alt="athenahacks2"> </div>
-
-      </div>
-    </div>
 
 
     <div id="footer-placeholder"> </div>
