@@ -593,10 +593,11 @@ a:hover {
 
 .twoimg-gallery {
   max-height: 30rem;
+  max-width: 80rem;
   display: flex;
   display: -ms-flexbox; /* IE10 */
   justify-content: center;
-  max-width: 80rem;
+  
 }
 
 .fullwidth-img {
@@ -706,7 +707,7 @@ a:hover {
     font-size: var(--text-md);
   }
 
-  .grid-gallery, .twoimg-gallery {
+  .grid-gallery, .twoimg-gallery, .details {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
@@ -719,9 +720,6 @@ a:hover {
   }
 
   .details {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
     margin-top: 1rem;
   }
 
@@ -737,7 +735,7 @@ a:hover {
     transform: translateY(0px);
   }
 
-  .grid-gallery, .twoimg-gallery {
+  .grid-gallery, .twoimg-gallery, .details {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
@@ -749,10 +747,11 @@ a:hover {
     max-width: 50%;
   }
 
+  .twoimg-gallery {
+    max-height: 20rem;
+  }
+
   .details {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
     margin-top: 1rem;
   }
 
