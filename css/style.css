@@ -570,6 +570,7 @@ a:hover {
 
 .icon-img {
   height: 1rem;
+  width: 1rem;
   width: auto;
   filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
@@ -727,6 +728,11 @@ a:hover {
     max-width: 40%;
     padding-top: 1rem;
   }
+
+  .icon-img {
+    height: 3em;
+    padding-bottom: 1em;
+  }
 }
 
 @media screen and (max-height: 525px) {
@@ -758,6 +764,11 @@ a:hover {
   .details img {
     max-width: 40%;
     padding-top: 1rem;
+  }
+
+  .icon-img {
+    height: 3em;
+    padding-bottom: 1em;
   }
 
 }
