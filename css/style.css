@@ -601,6 +601,11 @@ a:hover {
   
 }
 
+.ath {
+  height: auto;
+  max-width: 60rem;
+}
+
 .fullwidth-img {
   width: 100%;
   height: auto;
@@ -609,6 +614,12 @@ a:hover {
 .fullheight-img {
   height: 100%;
   width: auto;
+}
+
+.tworow-gallery {
+  flex: 50%; 
+  -ms-flex: 50%; 
+  padding: 2px;
 }
 
 .row-gallery {
@@ -650,6 +661,11 @@ a:hover {
     width: var(--space-xxxl);
   }
 
+   .ath {
+    max-width: 50rem;
+    height: auto;
+  }
+
 }
 
 /* Medium devices (tablets, less than 992px) */
@@ -662,6 +678,11 @@ a:hover {
   .sidenav {
     background-color: red;
     width: var(--space-xl);
+  }
+
+  .ath {
+    max-width: 45rem;
+    height: auto;
   }
 
 }
@@ -680,6 +701,11 @@ a:hover {
   .sidenav {
     background-color:aliceblue;
     width: var(--space-lg);
+  }
+
+  .ath {
+    max-width: 30rem;
+    height: auto;
   }
 
 }
@@ -708,10 +734,15 @@ a:hover {
     font-size: var(--text-md);
   }
 
-  .grid-gallery, .twoimg-gallery, .details {
+  .grid-gallery, .details {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
+  }
+
+  .ath {
+    max-width: 30rem;
+    height: auto;
   }
 
   .row-gallery {
@@ -741,7 +772,7 @@ a:hover {
     transform: translateY(0px);
   }
 
-  .grid-gallery, .twoimg-gallery, .details {
+  .grid-gallery, .details {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
@@ -751,10 +782,6 @@ a:hover {
     -ms-flex: 50%;
     flex: 50%;
     max-width: 50%;
-  }
-
-  .twoimg-gallery {
-    max-height: 20rem;
   }
 
   .details {
@@ -771,6 +798,11 @@ a:hover {
     padding-bottom: 1em;
   }
 
+  .ath {
+    max-width: 25rem;
+    height: auto;
+  }
+
 }
 /* ************************************** */
 
@@ -781,8 +813,10 @@ a:hover {
 
 - navbar hover color fixed but applies to all hoverable text (a)
 - transition to projects section (kept within index instead of new page)
-- footer not showing up
 - resume pg, externally link needs diff color
+- ***compass images aspect ratio needs to be fixed
+- html extension hide
+- icon
 
 - other projects section, add carousel?
 - enable dark mode and color blind mode
