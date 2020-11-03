@@ -485,15 +485,13 @@ a:hover {
 
 
 
-img .test {
-    max-width: 100%;
-    max-height: 100%;
+.test {
+    height: auto; 
+    width: auto; 
+    max-width: 100%; 
 }
 
-.test2 {
-  height: 18rem;  
-  width: 18rem;
-}
+
 
 .bigcard-img-container {
   height: 18rem;  
@@ -720,6 +718,10 @@ img .test {
     height: auto;
   }
 
+  .bigcard-img-container {
+    max-height: 10rem;
+  }
+
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -776,6 +778,10 @@ img .test {
     height: 3em;
     padding-bottom: 1em;
   }
+
+  .bigcard-img-container {
+    max-height: 10rem;
+  }
 }
 
 @media screen and (max-height: 525px) {
@@ -813,6 +819,10 @@ img .test {
   .ath {
     max-width: 25rem;
     height: auto;
+  }
+
+  .bigcard-img-container {
+    max-height: 10rem;
   }
 
 }
