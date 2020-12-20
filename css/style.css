@@ -483,6 +483,16 @@ a:hover {
   /* object-fit: contain; */
 }
 
+
+
+.test {
+    height: auto; 
+    width: auto; 
+    max-width: 100%; 
+}
+
+
+
 .bigcard-img-container {
   height: 18rem;  
   width: 100%;
@@ -708,6 +718,10 @@ a:hover {
     height: auto;
   }
 
+  .bigcard-img-container {
+    max-height: 10rem;
+  }
+
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -764,6 +778,10 @@ a:hover {
     height: 3em;
     padding-bottom: 1em;
   }
+
+  .bigcard-img-container {
+    max-height: 10rem;
+  }
 }
 
 @media screen and (max-height: 525px) {
@@ -803,6 +821,10 @@ a:hover {
     height: auto;
   }
 
+  .bigcard-img-container {
+    max-height: 10rem;
+  }
+
 }
 /* ************************************** */
 
@@ -814,9 +836,9 @@ a:hover {
 - navbar hover color fixed but applies to all hoverable text (a)
 - transition to projects section (kept within index instead of new page)
 - resume pg, externally link needs diff color
-- ***compass images aspect ratio needs to be fixed
 - html extension hide
-- icon
+- favicon
+- slow loading time / loading issues
 
 - other projects section, add carousel?
 - enable dark mode and color blind mode
@@ -830,6 +852,6 @@ a:hover {
 Credit:
 - https://christopheraue.net/design/fading-pages-on-load-and-unload
 - https://css-tricks.com/snippets/css/typewriter-effect/
-
+- https://www.w3schools.com/charsets/ref_utf_punctuation.asp
 
 */
