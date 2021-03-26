@@ -21,8 +21,8 @@
     <title>COVID Point</title>
   </head>
 
-  <body>
-    <div id="page-container" style="color:red">
+  <body class="animate-in">
+    <div id="page-container">
     <div id="nav-placeholder"> </div>
 
     <!--
@@ -34,17 +34,14 @@
     </div>
     -->
 
-    <div class="container">
-      <div class="row py-3">
-          <div class="col-3 order-2" id="sticky-sidebar">
-              <div class="sticky-top">
-                  ...
-              </div>
-          </div>
-          <div class="col" id="main">
-              <h1>Main Area</h1>
-              ...   
-          </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-m-4" id="sticky-sidebar">
+          Sidebar
+        </div>
+        <div class="col-m-8" id="main">
+          Main Area
+        </div>
       </div>
     </div>
 
