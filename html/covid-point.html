@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Assistant|Didact+Gothic|Josefin+Sans|Molengo|Muli|Nunito|Overpass|Poppins|Questrial|Quicksand|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/90d52e972b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../script/script.js"></script>
+
+
+    <title>COVID Point</title>
+  </head>
+
+  <body class="animate-in">
+    <div id="page-container">
+    <div id="nav-placeholder"> </div>
+
+    <!--
+    <div class="sidenav">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact">Contact</a>
+    </div>
+    -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-m-4" id="sticky-sidebar">
+          Sidebar
+        </div>
+        <div class="col-m-8" id="main">
+          Main Area
+        </div>
+      </div>
+    </div>
+
+    <div class="container intro" style="margin-top:5rem;">
+      <div class="row">
+      <div class="col-7 details">
+       <h1>Compass</h1>
+       <p class="summary">
+        Who doesn't love to travel? 
+
+        We wanted to create an easy way for people to plan their vacations.
+
+        Compass allows you to simply type in your vacation destination, see events, and add to your custom itinerary.
+       </p>
+       <p><small>Check out our project on&thinsp;</small>
+          <a href="https://github.com/aliyuanh/Compass" target="_blank"> <img src="../images/github.png" class="icon-img" alt="github"> </a>
+          <a href="https://devpost.com/software/compass-zqw68j" target="_blank"> <span title="Devpost"> <img src="../images/devpost.png" class="icon-img" alt="devpost"> </span> </a>
+        </p>
+      </div>
+            
+      <div class="col-2 details">
+            <div class="row"> <div class="col"> <p class="top-details">Time</p> <p>February 2019</p> </div></div>
+            <div class="row"> <div class="col"> <p class="top-details">Role</p> <p>Mobile Developer</p> </div></div>
+            <div class="row"> <div class="col"> <p class="top-details">Software</p> <p>Expo (React Native)</p> </div></div>
+      </div>
+      
+      <div class="col-3 details">
+        <img src="../images/compass/compass.png" class="fullwidth-img details-img" alt="compass-logo">
+      </div>
+
+      </div>
+    </div>
+
+
+    <div class="container" id="separator">
+      <h3><span class="highlight">Introduction</span></h3>
+      <p>Last year, I attended AthenaHacks 2019 (hackathon) at USC to partake in fun workshops and learn new things. At AthenaHacks, I formed a group with 3 other students to tackle a problem we all faced before -- planning a trip. Furthermore, my teammates and I all wanted to try something new, so we attended various workshops together and decided to work with a language and environment we were not previously familiar with. </p>
+    </div>
+
+    <!-- not using separator, which is 4rem, diff of 1rem above and below image -->
+    <div class="container">
+      <div class="row">
+        <div class="col twoimg-gallery" style="padding: 3rem;"> <img src="../images/compass/group.png" alt="athenahacks1" class="fullheight-img ath"> </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <h3><span class="highlight">Ideation</span></h3>
+      <p>Currently, there are various services people use to search for tourist destinations and attractions, such as Yelp and TripAdvisor, and for planning, such as Google Calendar. However, these services are reliant on user reviews and are more free-formed. We wanted to create an app that would provide structure and guidance for trip planning. This app would allow the user to create and modify customizable itineraries based on search results and share them with others (either for viewing or editing purposes). Oftentimes, I have hundreds of tabs pulled out with an excel sheet to keep track of everything. Managing these tabs while organizing event details can be pretty tiresome. So, we thought why not allow the user to search, add, and edit all at the same time in the same platform?</p>
+      
+      <div class="subsection" id="separator">
+        <h4>&thinsp; Inspiration</h4>
+      </div>
+
+      <div class="container" style="padding: 0 2rem;"> 
+        <div class="row grid-gallery-row"> 
+          <div class="col grid-gallery">
+            <img src="../images/compass/google-trip.png" alt="google trips" style="border-bottom: 1px solid lightgray; border-right: 1px solid lightgray;">
+            <img src="../images/compass/airbnb.png" alt="airbnb" style="border-right: 1px solid lightgray;">
+          </div>
+          <div class="col grid-gallery">
+            <img src="../images/compass/google.png" alt="google" style="border-bottom: 1px solid lightgray;">
+            <img src="../images/compass/google-cal.png" alt="google calendar">
+          </div>
+        </div>
+      </div>
+      <p class="caption" style="text-align: center;">reference images used as inspiration</p>
+
+      <div class="subsection" id="separator">
+        <h4>&thinsp; Sketch</h4>
+      </div>
+      <p>We wanted Compass to allow for specific searches, such as shopping centers, and for general searches, such as things to do with children. Users would first select a destination and then either search for something they have in mind or to pick an activity from a list of suggested starting points. As users add activities to their itineraries, additional details can be specified such as time and notes. Furthermore, as Compass allows users to connect their accounts to their social media accounts, users would be able to see places and services their friends recommend in Compass as opposed to reviews from the general public. Ideally, we wanted users to view their itineraries as one would looking at Google Calendars (day/week/month format). Users would be able to drag, elongate, and shorten events to manage general trip flow or get into detail such as changing specific times.</p>
+      
+      <div class="container" id="separator"> 
+        <div class="row justify-content-center">
+          <div class="col twoimg-gallery">
+            <img class="fullwidth-img" src="../images/compass/sketch1.jpg">
+          </div>
+          <div class="col twoimg-gallery">
+            <img class="fullwidth-img" src="../images/compass/sketch2.jpg">
+          </div> 
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container" id="separator">
+      <h3><span class="highlight">Product</span></h3>
+      <p>Compass is a mobile app designed to ease planning for travel trips and vacations through flexible search functionality and customizable itineraries. We built Compass with React Native and Javascript through <a href="https://expo.io/" target="_blank">Expo</a>. Despite our aspirations for Compass, we compromised for simpler features as we neither had the time nor the expertise to develop such an app. This was our first time using Expo and coding in React Native. Furthermore, as a hackathon project, Compass was created in a weekend's worth of time. In light of these limitations, we focused on getting the general idea of trip planning through destination searches and customizable itineraries. 
+      </p>
+
+      <div class="row" id="separator">
+        <div class="col row-gallery">
+          <img src="../images/compass/compass1.jpeg" class="fullwidth-img" alt="compass1">
+        </div>
+
+        <div class="col row-gallery">
+          <img src="../images/compass/compass2.jpeg" class="fullwidth-img" alt="compass2">
+        </div>
+ 
+        <div class="col row-gallery">
+          <img src="../images/compass/compass4.png" class="fullwidth-img" alt="compass3">
+        </div>
+
+        <div class="col row-gallery">
+          <img src="../images/compass/compass5.jpeg" class="fullwidth-img" alt="compass4">
+        </div>
+
+        <div class="col row-gallery">
+          <img src="../images/compass/compass3.png" class="fullwidth-img" alt="compass5">
+        </div>
+
+        <div class="col row-gallery">
+          <img src="../images/compass/compass6.png" class="fullwidth-img" alt="compass6">
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="separator">
+      <h3><span class="highlight">Takeaways</span></h3>
+      <p>
+        <ul>
+          <li>Never be scared to try something new</li>
+          <li>Don't think about the what-ifs and whether you can do something or not</li>
+          <li>Be confident! There's a lot of people out there who are just as worried, anxious, alone, inexperienced...</li>
+        </ul>
+
+        I went to AthenaHacks alone, mainly to attend the workshops and to learn something new. I didn't know anyone and wasn't planning on finding a group. Yet, when they announced for team formations, a tiny part of me told me to go and see what I might stumble across. I went up the very last second and ended up joining a group of 3 other girls, who I became good friends with! I was pretty nervous going to a Hackathon by myself, but I met some fantastic people and had a great time. My group and I have never used React Native before this Hackathon and decided to learn it as we were creating Compass. Even though a big portion of the functionality had to be simplified, we were proud at what we achieved in the little time span we had.
+      </p>
+
+    <div id="footer-placeholder"> </div>
+    </div>
+
+    <!-- scripts -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../script/script.js"></script>
+
+  </body>
+
+<!-- Credits:
+
+
+-->
+
+</html>
