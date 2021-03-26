@@ -144,10 +144,14 @@ a:hover {
   margin-top: 4rem;
 }
 
-#page-container {
+#container {
   position: relative;
   min-height: 100vh;
   margin-top: var(--space-xxxl);
+}
+
+#main-section {
+  margin: var(--space-xxxl);
 }
 
 /****************************************************/
