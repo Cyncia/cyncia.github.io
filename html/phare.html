@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Assistant|Didact+Gothic|Josefin+Sans|Molengo|Muli|Nunito|Overpass|Poppins|Questrial|Quicksand|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/90d52e972b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../script/script.js"></script>
+
+
+    <title>Phare</title>
+  </head>
+
+  <body class="animate-in">
+    <div id="page-container">
+  	<div id="nav-placeholder"> </div>
+
+    <!--
+  	<div class="sidenav">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact">Contact</a>
+    </div>
+    -->
+
+    <div class="container intro" style="margin-top:5rem;">
+        <div class="row">
+        <div class="col-8">
+    	   <h1>Phare</h1>
+    	   <p class="summary">A fast and convenient photo sharing tool for friends and family.</p>
+    	</div>
+            
+    	<div class="col-4">
+            <div class="row"> <div class="col"> <p class="top-details">Time</p> <p>Summer 2018</p> </div></div>
+            <div class="row"> <div class="col"> <p class="top-details">Role</p> <p>Mobile Developer, UI Designer</p> </div></div>
+            <div class="row"> <div class="col"> <p class="top-details">Software</p> <p>Figma, XCode (Swift)</p> </div></div>
+
+    	</div>
+    	</div>
+    </div>
+
+    <!--
+    <div class="container intro">
+      <div class="row top-details">
+        <div class="col"> <p>Time</p> </div>
+        <div class="col"> <p>Role</p> </div>
+        <div class="col"> <p>Software</p> </div>
+      </div>
+
+      <div class="row">
+        <div class="col"> <p>Summer 2018</p> </div>
+        <div class="col"> <p>Mobile Developer, UI Designer</p> </div>
+        <div class="col"> <p>Figma, XCode (Swift)</p> </div>
+      </div>
+    </div>
+    -->
+
+    <div class="container intro" id="about">
+      <h3><span class="highlight">The Problem</span></h3>
+      <p>In this age of digital tech, cameras are everywhere. Taking a picture is so easy now, but the real issue is how to share these photos in a convenient and efficient way. As an avid traveller, I love going on trips and taking photos. But at the end of every trip, I spend hours uploading my images, distributing them with others, and downloading other people’s pictures.
+    </div>
+
+    <div class="container intro">
+      <h3><span class="highlight">Why</span></h3>
+      <p>Photo sharing can be a huge hassle. Pre-existing platforms such as google photos or dropbox all require accounts and a good amount of setup. Our goal was to provide a lightweight service for sharing as conveniently as possible. This means no remembering sign up credentials, no time spent on profile information, and no dealing with spam emails.</p>
+    </div> 
+     
+    <!-- research section -->
+    <div class="container intro">
+      <h3><span class="highlight">Research</span></h3>
+      <p>Research on current photo-sharing issues and existing services was conducted to investigate common problems users face and understand their photo-sharing experience. We also developed a survey and created user personas to collect more information and gauge our potential user base.</p>
+
+    <!-- user research subsection -->
+    <div class="subsection">
+      <h4>&thinsp; User Research</h4>
+    </div>
+    <p>We researched issues that the general public might face when sharing photos and conducted a small scale survey within my local community about their photo-sharing experience.</p>
+    <p>After reading through various forums and user posts, I noticed that many people have frustrations with: </p>
+    <ul>
+      <li>Waiting for others to upload their images</li>
+      <li>Taking too long to upload images</li>
+      <li>Not comfortable with sharing/asking for information</li>
+      <li>Compression of image quality</li>
+      <li>Concern with privacy</li>
+    </ul>
+    <p>Interestingly, the majority of people who posted were parents and adults. Most wanted to share photos of children with relatives, wedding photos with guests, photos with significant others, or consolidate vacation photos. We anticipated a large part of our target audience would be young adults and college students because many young adults enjoy travelling, prefer not to waste any time on unnecessary actions, and typically take a long time sending out group pictures. 
+    </p>
+
+    <a href="https://forms.gle/5yjsjup5A5b3aUXe8" target="_blank"> <img class="link-img" src="../images/unlink.png">&thinsp;Survey Link</a> +
+    <a href="https://docs.google.com/spreadsheets/d/1FyF2YEjAd8_sBeXF07dcc-FTfA4tuoFdSHI6zBQSxDo/edit?usp=sharing" target="_blank"> <img class="link-img" src="../images/unlink.png">&thinsp;Results</a>
+
+    <p>To obtain more detailed responses and assess people's photo sharing preferences, we conducted a survey with 7 participants within our local community. They were asked several questions regarding their photo sharing habits and experiences with others. Most participates use a form of messenging app and Google Drive to share images. On average, it takes up to a week for photos to be received from all members of the party, with upper bounds of a few weeks in some cases. We also asked about potential factors that prevent users from wanting to share photos immediately. Several responded that selecting and uploading images online took too long. One response was that “when the trip is over, I don’t feel as motivated to upload pictures when I go back to my daily routine of work again.” Interestingly, many liked the idea of Apple's airdrop feature and wished it may work for longer distances. However, it is important to note that the participants of the survey were predominately university students, which introduces bias to the data. </p>
+    <!-- end of user research subsection -->
+
+
+    <!-- persona subsection -->  
+    <div class="subsection">
+      <h4>&thinsp; Personas</h4>
+    </div>
+    <p>I created 2 personas based off of the research conducted and from the insights gained through user forums to better understand who our users might be. These personas represent different contexts in which various people might want to use an app to share photos with those close to them. </p>
+
+    <!--<div class="container" style="outline: 1px solid black;">
+      <div class="row">
+        <div class="col">
+          <h5> Meet Keith</h5>
+          <img class="persona-img" src="../images/keith.png" alt="keith">
+          <p style="color: silver; font-style: italic; font-size: 12px;">Senior Biotechnology Researcher</p>
+        </div>
+
+        <div class="col">
+          <p>Keith has worked as a biotech researcher for many years. He’s never gotten around to using social media apps and uses his phone to check the occasional email. His recent company retreat has given him several memories that he wishes to look back on, but his colleagues aren’t avid phone users either.</p>
+        </div>
+
+      </div>
+    </div>-->
+
+    <div class="container persona">
+      <div class="row justify-content-center"> 
+        <div class="col-5 mx-auto justify-content-center text-center">
+          <h5> Meet Keith</h5>
+          <img class="persona-img" src="../images/keith.png" alt="keith">
+          <div class="container text-left">
+            <p>Keith has worked as a biotech researcher for many years. He’s never gotten around to using social media apps and uses his phone to check the occasional email. His recent company retreat has given him several memories that he wishes to look back on, but his colleagues aren’t avid phone users either.</p>
+          </div>        
+        </div>
+
+        <div class="col-5 mx-auto justify-content-center text-center">
+          <h5> Meet Emily</h5>
+          <img class="persona-img" src="../images/emily.png" alt="emily">
+          <div class="container text-left">
+            <p>Emily just started college and ended up taking many pictures with her family during her spring break. Soon, Emily and her siblings will be rushing back to their own busy lives, so she wants to easily exchange photos with them before they go.</p>
+          </div>
+        </div>
+      </div>
+     </div>
+    
+     <p>Despite the differing backgrounds of Keith and Emily, both share the common goal of easily sharing photos with those close to them. As photo sharing can be quite confusing and time consuming, many of participants I surveyed also expressed the desire to share photos in an easy and quick way.</p>
+     <!-- end of persona subsection -->
+
+
+     <!-- competitor research subsection -->
+    <div class="subsection">
+      <h4>&thinsp; Competitor Research</h4>
+    </div>
+    <p>To understand why the listed user issues exist and persist, I researched current and alternative platforms people use to upload and distribute photos. Many use a wide variety of services and platforms ranging from group messages to shared cloud services to private sharing apps.</p> 
+    <div class="container">
+      <div class="row" style="margin-top: 2rem;">
+
+        <div class="col text-center"> <span title="Google Photos"> <img class="company-img" src="../images/photos.png" alt="google photos"> </span> 
+            <ul class="company-detail"> <li>sharing any number of photos requires the user to create a new album</li> <li>might need email / number of others</li> <li>potentially limited storage</li> </ul> 
+        </div>
+        <div class="col text-center"> <span title="Google Drive"> <img class="company-img" src="../images/google-drive.png" alt="google drive"> </span> 
+            <ul class="company-detail"> <li>might need emails of others</li> <li>consider permission settings</li> <li>more for general storage purposes</li> </ul>
+        </div>
+        <div class="col text-center"> <span title="Facebook"> <img class="company-img" src="../images/facebook.png" alt="facebook"> </span> 
+            <ul class="company-detail"> <li>everyone can view unless settings are changed</li> <li>messenger sent images need to be downloaded one by one</li> <li>compressed quality</li> </ul> 
+        </div>
+        <div class="col text-center"> <span title="Smugmug"> <img class="company-img" src="../images/smugmug.png" alt="smugmug"> </span>
+            <ul class="company-detail"> <li>paid service</li> <li>different interests from professional portfolios to photo storage</li>
+            </ul>
+        </div>
+        <div class="col text-center"> <span title="Dropbox"> <img class="company-img" src="../images/dropbox.png" alt="dropbox"> </span> 
+            <ul class="company-detail"> <li>free vs paid version</li> <li>difficulty navigating platform</li> <li>more for general storage purposes</li>
+            </ul>
+        </div>
+        <div class="col text-center"> <span title="Flickr"> <img class="company-img" src="../images/flickr.png" alt="flickr"> </span> 
+            <ul class="company-detail"> <li>spam</li> <li>different interests from self-promotion to photo storage</li>
+            </ul>
+        </div>
+      </div>
+      <div class="row justify-content-center caption">
+        <p>Popular services & cons of each</p>
+      </div>
+    </div>
+    <p>Many of these platforms currently: </p>
+    <ul>
+      <li>require an account to be made or are connected to social media</li>
+      <li>gather the information of other users, such as email or phone number</li>
+      <li>require the user to specifically select which photos to upload</li>
+      <li>only enable the user to download images one by one</li>
+      <li>may compress the image quality</li>
+    </ul>
+    <p>Although some platforms are easy to use and quick, they typically require an associated account or are not designed for photo sharing specifically. Cloud based services, such as Google Drive and Dropbox, are for general storage purposes and can complicate photo organization. On the other hand, social media platforms have the issue of privacy since most people consider photos as personal content and prefer sharing them with associated people instead of everyone. Messaging platforms, such as Facebook Messenger and Viber, may compress image quality and only enable the user to save images one by one. Furthermore, sites designed for displaying photos and photo sharing might not necessarily work well for those who only want to share material with close people. For example, Flickr and Smugmug both allow sharing of photos for casual use but also offer services for professional photographers, such as publicizing user image galleries. Most of these platforms and services are not designed to focus on photo sharing and uploading, which can bring confusion to new users and take up their time. Google Photos seems to be the most favored service due to its easy usage, commonality, and optimization for image organization. 
+    </p>
+    <!-- end of competitor research subsection -->
+
+     <!-- limitation subsection -->
+     <div class="subsection">
+      <h4>&thinsp; Limitations</h4>
+     </div>
+      <p>
+        The collected data suffers from bias and may not be representative of the general public. The research on user forums were based off of user submitted responses while the survey was only conducted among college students and has a small sample size. Furthermore, literature review should be included to validate and support the collected data. 
+      </p>
+     <!-- end of limitation subsection -->
+
+    </div> <!-- end of container intro // research section -->
+
+    <div class="container intro">
+      <h3><span class="highlight">Solution</span></h3>
+      <p>As a personal project with friends, I decided to create an app that provides a fast and convenient way for users to upload, distribute, and download images while also improving my technical skills.</p>
+      <!-- We focused on [pt1,2,3]. / With the goal of blah, we did 1 2 3. -->
+      
+    </div>
+
+    <div class="container intro">
+      <h3><span class="highlight">Design Process</span></h3>
+
+      
+      <!-- brainstorm subsection -->  
+      <div class="subsection">
+        <h4>&thinsp; Ideation</h4>
+      </div>
+      <p>The app started off with the idea that users could join servers where images would be automatically uploaded onto these servers. Other people could join these servers to view, download, and upload images through an encrypted access code. Joinable servers would not require the user to gather others’ emails or numbers while avoiding having to configure viewing permission settings. Users would be able to easily generate an invite to the server and others would be able to access the server through a simple code. </p>
+
+      <!--<p>IMG?</p>-->
+
+      <p>From there, we focused on the minimum functionality required to get the job done. This was to ensure that we did not bombard users with unnecessary features. For example, although an account would be ideal for cross-device usage, most people take photos on 1 personal device. We realized that setting up an account, while not too time consuming, were still steps that we could cut out for convenience. Except for a display name and an optional profile picture, email, birthdays, and other forms of information were not needed. Ultimately, we decided against chatting, commentating, and reacting features. Although we realize those features promote interactivity among users, we believe this would cause Phare to resemble a social media app and stray away from our focus of efficient photo sharing.</p>
+
+      <!-- end of brainstorm subsection --> 
+
+      <!-- sketch subsection -->  
+      <div class="subsection">
+        <h4>&thinsp; Sketch</h4>
+      </div>
+
+      <div class="container">
+        <div class="row"> 
+          <div class="col">
+            <img class="phare-sketch" src="../images/phare/phare_sketch1.jpg" alt="phare_sketch1">
+          </div>
+          <div class="col">
+            <img class="phare-sketch" src="../images/phare/phare_sketch2.jpg" alt="phare-sketch2">
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- end of sketch subsection --> 
+
+      <!-- mockup subsection -->  
+      <div class="subsection">
+        <h4>&thinsp; Mockup</h4>
+      </div>
+
+      
+
+      <!-- end of mockup subsection --> 
+
+      <!-- result subsection -->  
+      <div class="subsection">
+        <h4>&thinsp; Result</h4>
+      </div>
+      <!--<p>Flow -- download app, create server,
+        once a server is created, the app will automatically gather images taken until server is ended. user can invite others to the server by sending out a link? and having others enter an access code. these photos will be queued and ready for user selection. after a quick check that all queued images are ready to be distributed, the user may go ahead and upload the photos to the server. to download, users are able to select all or pick images in the server (insp img / messenger files).
+
+      <p>1. joinable servers 2. automatic queueing 3. time based intervals 4</p>-->
+
+      <!-- end of result subsection --> 
+
+
+      <!-- room for improv subsection -->  
+      <div class="subsection">
+        <h4>&thinsp; Room for Improvement</h4>
+      </div>
+      <p>
+          As a reacp, Phare aims to provide a quick and convenient way for people to share photos with others for time based events. Phare avoids the hassle of account creation, image selection, and asking for information through joinable servers that automatically queue up photos within a specified time frame. Due to this, users are not able to view their servers across devices and can only stores their photos on their local device. As photos are commonly taken on phones, Phare is a mobile first app that focuses on fast upload, download, and transfer.
+
+          Ideally, we would like to develop dynamic albums that will automatically upload images based on facial recognition to decrease image selection time. We also would like to make it so users can be active in multiple servers and control when to start and end each session for better flexibility and transparency. 
+        </p>
+
+      <!-- end of room for improv subsection -->
+
+    </div>
+
+    <div class="container intro">
+      <h3><span class="highlight">Take Aways</span></h3>
+      <p></p>
+     
+    </div>
+
+    <div id="footer-placeholder"> </div>
+    </div>
+
+    <!-- scripts -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../script/script.js"></script>
+
+  </body>
+
+<!-- Credits:
+<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+<div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+<div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+-->
+
+</html>
+
+
+<!-- TODO: 
+- competitor research
+- survery link
+-->
