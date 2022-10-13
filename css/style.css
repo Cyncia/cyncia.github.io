@@ -32,7 +32,7 @@
     --font-headers: Arcon-Regular;
 
     /* set base values */
-    --text-base-size: 1.05em;
+    --text-base-size: 16pt;
     --text-scale-ratio: 1.25;
 
     /* type scale */
@@ -79,7 +79,7 @@
         --text-base-size: 1.25em;
         --text-scale-ratio: 1.25;
         --space-unit: 1.25em;
-        --component-padding: var(--space-md); 
+        --component-padding: var(--space-md);
     }
 }
 */
@@ -174,7 +174,7 @@ a:hover {
   background-color: rgba(255, 255, 255, 0.85);
   transition: all 0.8s ease;
   -webkit-transition: all 0.8s ease;
-  -moz-transition: all 0.8s ease; 
+  -moz-transition: all 0.8s ease;
   -o-transition: all 0.8s ease;
 }
 
@@ -188,9 +188,11 @@ a:hover {
   -o-transition: all 0.8s ease;
 }
 
+/*
 .header {
   margin-bottom: var(--space-xl);
 }
+*/
 
 #other-header {
   font-weight: normal;
@@ -236,7 +238,7 @@ a:hover {
   justify-content: center;
   vertical-align: middle;
   transform: translateY(-135px);
-   
+
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -244,6 +246,70 @@ a:hover {
 }
 
 /*  .navb ul li.active */
+/*  HEADER */
+.header {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    line-height: 1;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    pointer-events: none;
+}
+
+.header-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 2.2vw;
+    padding-bottom: 2.2vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    pointer-events: auto;
+}
+
+.header-inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+}
+
+.header-mobile-layout-logo-left-nav-right {
+
+}
+
+.header-logo {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.header-nav {
+    text-align: right;
+    margin-left: auto;
+    padding-left: 1.3vw;
+}
+
+.navbar-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.navbar-links li {
+  margin-left: var(--space-lg);
+  /* font and text styling here*/
+}
+
+/*
 #navItems li.active a{
   color: var(--color-link-hover);
   background-color: transparent;
@@ -252,6 +318,8 @@ a:hover {
 .navbar-nav li {
   padding-left: var(--space-lg);
 }
+*/
+
 
 .caption {
   font-size: var(--text-sm);
@@ -263,7 +331,7 @@ a:hover {
 
 .top-details {
   font-weight: bolder;
-  padding-bottom: 0px; 
+  padding-bottom: 0px;
   margin-bottom: 0px;
   font-size: var(--text-sm);
   font-family: var(--font-secondary);
@@ -485,7 +553,7 @@ a:hover {
 }
 
 .card-img-container {
-  height: 15rem;  
+  height: 15rem;
   width: auto;
   overflow: hidden;
   object-fit: cover;
@@ -502,15 +570,15 @@ a:hover {
 
 
 .test {
-    height: auto; 
-    width: auto; 
-    max-width: 100%; 
+    height: auto;
+    width: auto;
+    max-width: 100%;
 }
 
 
 
 .bigcard-img-container {
-  height: 18rem;  
+  height: 18rem;
   width: 100%;
   overflow: hidden;
   object-fit: cover;
@@ -562,7 +630,7 @@ a:hover {
   margin-bottom: var(--space-lg);
   border-radius: 0;
   border-width: 0;
-  border-color: transparent; 
+  border-color: transparent;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
@@ -585,8 +653,8 @@ a:hover {
 /****************************************************/
 /* company stuff - for phare comp research icons  */
 .company-detail {
-  font-size: 12px; 
-  padding: 0.5rem 0 0 1rem; 
+  font-size: 12px;
+  padding: 0.5rem 0 0 1rem;
   text-align:left;
 }
 
@@ -624,7 +692,7 @@ a:hover {
   display: flex;
   display: -ms-flexbox; /* IE10 */
   justify-content: center;
-  
+
 }
 
 .ath {
@@ -643,14 +711,14 @@ a:hover {
 }
 
 .tworow-gallery {
-  flex: 50%; 
-  -ms-flex: 50%; 
+  flex: 50%;
+  -ms-flex: 50%;
   padding: 2px;
 }
 
 .row-gallery {
-  flex: 16.66%; 
-  -ms-flex: 16.66%; 
+  flex: 16.66%;
+  -ms-flex: 16.66%;
   padding: 2px;
 }
 
@@ -847,7 +915,7 @@ a:hover {
 
 
 
-/* ISSUES 
+/* ISSUES
 
 - navbar hover color fixed but applies to all hoverable text (a)
 - transition to projects section (kept within index instead of new page)

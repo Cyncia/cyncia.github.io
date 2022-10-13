@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Arcon-Regular';
+  src: url('../fonts/arcon/Arcon-Regular.eot');
+  src: url('../fonts/arcon/Arcon-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/arcon/Arcon-Regular.svg#Arcon-Regular') format('svg'),
+       url('../fonts/arcon/Arcon-Regular.ttf') format('truetype'),
+       url('../fonts/arcon/Arcon-Regular.woff') format('woff'),
+       url('../fonts/arcon/Arcon-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaBT-Light';
+  src: url('../fonts/futura-bt/FuturaBT-Light.eot');
+  src: url('../fonts/futura-bt/FuturaBT-Light.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/futura-bt/FuturaBT-Light.svg#FuturaBT-Light') format('svg'),
+       url('../fonts/futura-bt/FuturaBT-Light.ttf') format('truetype'),
+       url('../fonts/futura-bt/FuturaBT-Light.woff') format('woff'),
+       url('../fonts/futura-bt/FuturaBT-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+:root {
+    --font-primary: Assistant;
+    --font-secondary: Josefin Sans;
+    --font-backup: FuturaBT-Light;
+    --font-headers: Arcon-Regular;
+    --font-navbar: Arcon-Regular;
+
+    /* set base values */
+    --text-base-size: 16pt;
+    --text-scale-ratio: 1.25;
+
+    /* type scale */
+    --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+    --text-sm: calc(1em / var(--text-scale-ratio));
+    --text-md: calc(1em * var(--text-scale-ratio));
+    --text-lg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xxxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+
+    /* line-height */
+    --heading-line-height: 1.2;
+    --body-line-height: 1.55;
+
+    /* colors */
+    --color-text: #333;
+    --color-link: gray;
+    --color-link-hover: #F4989C;
+
+    --light-orange: #FFD0AE;
+    --light-purple: #EEE3F9;
+
+
+    /* spacing */
+    --space-unit: 1em;
+    --space-xxxs: calc(0.25 * var(--space-unit));
+    --space-xxs:  calc(0.375 * var(--space-unit));
+    --space-xs:   calc(0.5 * var(--space-unit));
+    --space-sm:   calc(0.75 * var(--space-unit));
+    --space-md:   calc(1.25 * var(--space-unit));
+    --space-lg:   calc(2 * var(--space-unit));
+    --space-xl:   calc(3.25 * var(--space-unit));
+    --space-xxl:  calc(5.25 * var(--space-unit));
+    --space-xxxl: calc(8.5 * var(--space-unit));
+
+    /* components padding */
+    --component-padding: var(--space-sm);
+}
+
+/*
+@include breakpoint(md) {
+    :root {
+        --text-base-size: 1.25em;
+        --text-scale-ratio: 1.25;
+        --space-unit: 1.25em;
+        --component-padding: var(--space-md);
+    }
+}
+*/
+
+
+/****************************************************/
+/****************     MAIN      *********************/
+/****************************************************/
+body {
+  font-size: var(--text-base-size);
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 16vh;
+}
+
+h1, h2, h3, h4, form legend {
+  color: var(--color-text-heading);
+  margin-bottom: var(--space-xxs);
+  line-height: var(--heading-line-height);
+}
+
+h1 {
+  font-size: var(--text-xxl);
+  font-family: var(--font-headers);
+}
+
+p {
+  line-height: var(--body-line-height);
+  font-size: var(--text-base-size);
+}
+
+a {
+  color: var(--color-link);
+}
+
+a:hover {
+  color: var(--color-link-hover);
+  text-decoration: none;
+}
+
+/*****************  HEADER & NAVBAR *****************/
+#top {
+  background-color: rgba(255, 255, 255, 0);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+}
+
+.header {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    line-height: 1;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    pointer-events: none;
+}
+
+.header-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 2.2vw;
+    padding-bottom: 2.2vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    pointer-events: auto;
+}
+
+.header-inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+}
+
+.header-mobile-layout-logo-left-nav-right {
+
+}
+
+.header-logo {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.header-nav {
+    text-align: right;
+    margin-left: auto;
+    padding-left: 1.3vw;
+}
+
+.navbar-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  list-style: none;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.navbar-links li {
+  margin-left: var(--space-lg);
+  font-size: var(--text-base-size);
+  font-family: var(--font-navbar);
+}
+
+/*
+#navItems li.active a{
+  color: var(--color-link-hover);
+  background-color: transparent;
+}
+
+.navbar-nav li {
+  padding-left: var(--space-lg);
+}
+*/
+
+
+.logo-img {
+  height: 100%;
+  width: auto;
+  display: inline;
+}
+
+/*****************  BODY *****************/
+.spacer {
+  flex: 1;
+}
+
+
+/*****************  FOOTER *****************/
+.footer {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #FAFAFA;
+  color: #4F4F4F;
+}
+
+.footer-wrapper {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3vw 4vw;
+  pointer-events: auto;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  display: flex;
+}
+
+.footer-icon-bar{
+  justify-content: flex-end;
+}
+
+.footer-icon {
+  color: #828282;
+  padding-left: 0.5em;
+}
+
+.footer-text {
+  font-size: var(--text-xs);
+  margin: auto 0;
+}

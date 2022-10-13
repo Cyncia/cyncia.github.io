@@ -9,6 +9,9 @@ $(document).ready(function () {
     $("#footer-placeholder").load("../html/footer.html");
  });
 
+
+
+// scroll to projects
 $(document).ready( function () {
  $('#down').on('click',function () {
   $("html").scrollTop(0);
@@ -35,7 +38,7 @@ $(function() {
                 // Only prevent default if animation is actually gonna happen
                 event.preventDefault();
                 var h = target.offset().top;
-         
+
                 if (h == null) {
                     console.log("here")
                     h = 200
@@ -87,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 window.location = anchor.href;
                 fader.removeEventListener('animationend', listener);
             };
-            
+
             fader.addEventListener('animationend', listener);
             event.preventDefault();
             fader.classList.add('fade-in');
