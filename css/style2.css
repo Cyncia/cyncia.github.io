@@ -29,8 +29,9 @@
     --font-primary: Assistant;
     --font-secondary: Josefin Sans;
     --font-backup: FuturaBT-Light;
-    --font-headers: Arcon-Regular;
-    --font-navbar: Arcon-Regular;
+
+    --font-headers: Assistant;
+    --font-navbar: Overpass Mono;
 
     /* set base values */
     --text-base-size: 16pt;
@@ -56,6 +57,9 @@
 
     --light-orange: #FFD0AE;
     --light-purple: #EEE3F9;
+    --light-gray: #787878;
+
+    --color-neutral-gray: #888888;
 
 
     /* spacing */
@@ -96,18 +100,24 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  margin-top: 16vh;
+  /*margin-top: 16vh;*/
 }
 
 h1, h2, h3, h4, form legend {
   color: var(--color-text-heading);
-  margin-bottom: var(--space-xxs);
+  margin-bottom: var(--space-sm);
   line-height: var(--heading-line-height);
 }
 
 h1 {
-  font-size: var(--text-xxl);
   font-family: var(--font-headers);
+  font-size: var(--text-xxl);
+}
+
+h2 {
+  font-family: var(--font-headers);
+  font-size: 32px;
+  color: var(--color-neutral-gray);
 }
 
 p {
@@ -124,7 +134,7 @@ a:hover {
   text-decoration: none;
 }
 
-/*****************  HEADER & NAVBAR *****************/
+/*****************  HEADER & NAVBAR  *****************/
 #top {
   background-color: rgba(255, 255, 255, 0);
   position: fixed;
@@ -198,8 +208,10 @@ a:hover {
 
 .navbar-links li {
   margin-left: var(--space-lg);
-  font-size: var(--text-base-size);
+  font-size: 15pt;
   font-family: var(--font-navbar);
+  font-weight: light;
+  color: var(--light-gray);
 }
 
 /*
@@ -213,20 +225,54 @@ a:hover {
 }
 */
 
-
+/*****************  MEDIA & IMAGES  *****************/
 .logo-img {
   height: 100%;
   width: auto;
   display: inline;
 }
 
-/*****************  BODY *****************/
+.img-caption {
+  font-family: var(--font-primary);
+  font-size: var(--text-xs);
+  font-style: italic;
+  text-decoration: underline;
+}
+
+
+/*****************  LANDING COVER  *****************/
+.case-study-landing-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.landing-intro {
+  padding: 0;
+}
+
+.landing-intro-title {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.landing-intro-title-content {
+  padding: var(--space-lg);
+}
+
+.landing-intro-img {
+  max-height: 90vh;
+  display: flex;
+}
+
+/*****************  BODY  *****************/
 .spacer {
   flex: 1;
 }
 
 
-/*****************  FOOTER *****************/
+/*****************  FOOTER  *****************/
 .footer {
   left: 0;
   right: 0;
