@@ -315,6 +315,7 @@ a:hover {
 
 .content {
   margin-bottom: 20vh;
+  padding: 0;
 }
 
 .divider-section {
@@ -326,11 +327,18 @@ a:hover {
 .divider-section-2 {
   background-color: var(--color-bkgd-mid-gray);
   margin: auto 0;
-  padding:0;
+  padding: 0;
 }
 
 .divider-content {
   padding: 6vh 4vw 6vh 16vw;
+}
+
+.side-by-side-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 /*****************  SIDEBAR  *****************/
