@@ -313,6 +313,12 @@ a:hover {
   margin-bottom: 20vh;
 }
 
+.content-text-only {
+  width: 50vw;
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-lg);
+}
+
 .content {
   margin-bottom: 20vh;
   padding: 0;
@@ -337,8 +343,18 @@ a:hover {
 .side-by-side-content {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   align-content: flex-start;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4rem 0 4rem;
+}
+
+.stack > div {
+  margin-bottom: 4rem;
 }
 
 /*****************  SIDEBAR  *****************/

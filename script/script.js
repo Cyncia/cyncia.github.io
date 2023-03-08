@@ -10,9 +10,9 @@ $(document).ready(function () {
  });
 
 
-
+/*
 // scroll to projects
-$(document).ready( function () {
+$(document).ready(function () {
  $('#down').on('click',function () {
   $("html").scrollTop(0);
    $('html, body').animate({
@@ -20,101 +20,56 @@ $(document).ready( function () {
  }, 10);
  });
 });
+*/
 
-$(function() {
-    /*-----------------------------------
-     * ONE PAGE SCROLLING
-     *-----------------------------------*/
-    // Select all links with hashes
-    $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').not('[data-toggle="tab"]').on('click', function(event) {
-        // On-page links
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            // Figure out element to scroll to
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-
-            // Does a scroll target exist?
-            if (target.length) {
-                // Only prevent default if animation is actually gonna happen
-                event.preventDefault();
-                var h = target.offset().top;
-
-                if (h == null) {
-                    console.log("here")
-                    h = 200
-                }
-
-                $('html, body').animate({
-                    scrollTop: h - 100
-                }, 1000, function() {
-                    // Callback after animation
-                    // Must change focus!
-                    /*
-                    var $target = $(target);
-                    $target.focus();
-
-                    if ($target.is(":focus")) { // Checking if the target was focused
-                        return false;
-                    } else {
-                        $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                        $target.focus(); // Set focus again
-                    };*/
-                });
-            }
-        }
-    });
-
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 100) {
+    //document.getElementById("top").style.paddingTop = "1.8vw";
+    document.getElementById("top").setAttribute('style', 'padding-top: 1.8vw; padding-bottom: 1.8vw; background-color: rgba(255, 255, 255, 0.85);');
+  } else {
+    document.getElementById("top").setAttribute('style', 'padding-top: 2.2vw; padding-bottom: 2.2vw');
+  }
 });
 
-/*
-function fadeInPage() {
-    if (!window.AnimationEvent) { return; }
-    var fader = document.getElementById('fader');
-    fader.classList.add('fade-out');
+
+
+//$('html, body').hide();
+
+var jump=function(e)
+{
+   if (e){
+       e.preventDefault();
+       var target = $(this).attr("href");
+   } else{
+       var target = location.hash;
+   }
+
+   $('html,body').animate(
+   {
+       scrollTop: $(target).offset().top - 125
+   },800);
+
+   location.hash = target; //attach the hash (#jumptarget) to the page
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    if (!window.AnimationEvent) { return; }
-    var anchors = document.getElementByTagName('a');
+$(document).ready(function()
+{
+    $('a[href^="#"]').on("click", jump);
 
-    for (var idx=0; idx<anchors.length; idx+=1) {
-        if (anchors[idx].hostname !== windown.location.hostname || anchors[idx].pathname !== windown.location.pathname) {
-            continue;
-        }
-
-        anchors[idx].addEventListener('click', function(event) {
-            var fader = document.getElementById('fader'),
-                anchor = event.currentTarget;
-
-            var listener = function() {
-                window.location = anchor.href;
-                fader.removeEventListener('animationend', listener);
-            };
-
-            fader.addEventListener('animationend', listener);
-            event.preventDefault();
-            fader.classList.add('fade-in');
-        });
+    if (location.hash){
+        setTimeout(function(){
+            $('html, body').scrollTop(0).show();
+            jump();
+        }, 0);
+    }else{
+        $('html, body').show();
     }
 });
 
-window.addEventListener('pageshow', function(event) {
-    if (!event.persisted) {
-        return;
-    }
 
-    var fader = document.getElementById('fader');
-    fader.classList.remove('fade-in');
-});
 
-*/
 
 /*
-window.addEventListener("beforeunload", function() {
-    document.body.classList.add("animate-out");
-});
-*/
-
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -171,3 +126,4 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
+*/
