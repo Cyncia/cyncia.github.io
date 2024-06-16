@@ -27,7 +27,7 @@
 
 :root {
     --font-primary: Assistant;
-    --font-secondary: Josefin Sans;
+    --font-secondary: Inter;
     --font-backup: FuturaBT-Light;
 
     --font-headers: Assistant;
@@ -362,6 +362,7 @@ a:hover {
   position: fixed;
   top: 25vh;
   left: 4vw;
+  opacity: 0;
 }
 
 .sidebar-links {

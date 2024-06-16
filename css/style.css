@@ -26,7 +26,7 @@
 
 
 :root {
-    --font-primary: FuturaBT-Light;
+    --font-primary: Inter;
     --font-secondary: Josefin Sans;
     --font-backup: Assistant;
     --font-headers: Arcon-Regular;
@@ -428,6 +428,39 @@ a:hover {
   font-weight: lighter;
 }
 
+
+/****************************************************/
+/****************   WIP PAGE   *********************/
+/****************************************************/
+.wip-dark {
+  font-family:'Space Grotesk';
+  color: white;
+}
+
+.wip-horizontal-bar {
+  margin: 0;
+  padding: 0;
+  color: #F4989C;"
+}
+
+.wip-horizontal-bar > li
+{
+  display: inline-block;
+  padding-right:24px;
+}
+
+.wip-intro {
+  margin-top:6rem;
+  margin-bottom:4rem;
+}
+
+.wip-dark-jumbo {
+  font-family:'inter';
+  font-weight: 800;
+  font-size:80px;
+}
+
+
 /****************************************************/
 /****************    TRANSITIONS     ****************/
 /****************************************************/
@@ -804,6 +837,10 @@ a:hover {
 
   .bigcard-img-container {
     max-height: 10rem;
+  }
+
+  .wip-dark-jumbo {
+    font-size: 3rem;
   }
 
 }
