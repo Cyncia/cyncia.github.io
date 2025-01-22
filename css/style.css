@@ -437,18 +437,49 @@ a:hover {
 }
 
 .wip-intro {
-  margin-top:6rem;
-  margin-bottom:4rem;
+  margin-bottom: 4rem;
+  margin-top: 8rem;
 }
 
 .wip-dark-jumbo {
-  font-family:'inter';
+  /*font-family:'inter';
   font-weight: 800;
   font-size:80px;
+  color: #939393;*/
+
+  font-family: 'Space Grotesk';
+  font-weight: 800;
+  font-size: 48px;
+  font-style: italic;
   color: #939393;
 }
 
+.infinite-scroll-wrapper {
+  max-width: 100%;
+  overflow: hidden;
+  border-top: 1px solid #939393;
+  margin-top: 6rem;
+}
 
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 24s linear infinite;
+}
+
+.marquee h1 {
+  display: inline-block;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
 
 /****************************************************/
 /**************    MEDIA INQURIES     ***************/
